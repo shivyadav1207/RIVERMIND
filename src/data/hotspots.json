@@ -1,0 +1,4106 @@
+[
+  {
+    "id": "hotspot-1",
+    "latitude": 8.16,
+    "longitude": 77.4575,
+    "severity_level": "Yellow",
+    "state_name": "Tamil Nadu",
+    "location_details": {
+      "station_name": "Ashramam",
+      "state": "Tamil Nadu",
+      "river": "Pazhayar",
+      "basin": "West Flowing Rivers From Tadri to Kanyakumari",
+      "peak_flood_level_m": 85.69,
+      "danger_level_m": 6.0,
+      "calculated_risk_score": 37.43,
+      "precipitation_mm": 143.6,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-2",
+    "latitude": 8.3053,
+    "longitude": 77.1856,
+    "severity_level": "Yellow",
+    "state_name": "Tamil Nadu",
+    "location_details": {
+      "station_name": "Kuzhithurai",
+      "state": "Tamil Nadu",
+      "river": "Thambraparni",
+      "basin": "West Flowing Rivers From Tadri to Kanyakumari",
+      "peak_flood_level_m": 35.24,
+      "danger_level_m": 3.5,
+      "calculated_risk_score": 17.4,
+      "precipitation_mm": 333.74,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-3",
+    "latitude": 8.7144,
+    "longitude": 77.835,
+    "severity_level": "Orange",
+    "state_name": "Tamil Nadu",
+    "location_details": {
+      "station_name": "Murappanadu",
+      "state": "Tamil Nadu",
+      "river": "Tambraparni",
+      "basin": "East flowing rivers between Pennar Kanyakumari",
+      "peak_flood_level_m": 85.7,
+      "danger_level_m": 20.5,
+      "calculated_risk_score": 43.94,
+      "precipitation_mm": 261.56,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-4",
+    "latitude": 8.715,
+    "longitude": 76.85,
+    "severity_level": "Yellow",
+    "state_name": "Kerala",
+    "location_details": {
+      "station_name": "Ayilam",
+      "state": "Kerala",
+      "river": "Vamanapuram",
+      "basin": "West Flowing Rivers From Tadri to Kanyakumari",
+      "peak_flood_level_m": 85.82,
+      "danger_level_m": 8.5,
+      "calculated_risk_score": 38.93,
+      "precipitation_mm": 217.56,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-5",
+    "latitude": 9.03,
+    "longitude": 76.92,
+    "severity_level": "Yellow",
+    "state_name": "Kerala",
+    "location_details": {
+      "station_name": "Nellipalli",
+      "state": "Kerala",
+      "river": "Kallada",
+      "basin": "West flowing rivers from Tadri to Kanyakumari",
+      "peak_flood_level_m": 85.81,
+      "danger_level_m": 20.0,
+      "calculated_risk_score": 42.64,
+      "precipitation_mm": 71.49,
+      "rain_tier": "Light",
+      "reliability": "Caution"
+    }
+  },
+  {
+    "id": "hotspot-6",
+    "latitude": 9.0728,
+    "longitude": 76.7611,
+    "severity_level": "Yellow",
+    "state_name": "Kerala",
+    "location_details": {
+      "station_name": "Pattazhy",
+      "state": "Kerala",
+      "river": "Kallada",
+      "basin": "West Flowing Rivers From Tadri to Kanyakumari",
+      "peak_flood_level_m": 71.6,
+      "danger_level_m": 8.0,
+      "calculated_risk_score": 32.15,
+      "precipitation_mm": 71.48,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-7",
+    "latitude": 9.22,
+    "longitude": 76.71,
+    "severity_level": "Yellow",
+    "state_name": "Kerala",
+    "location_details": {
+      "station_name": "Thumpamon",
+      "state": "Kerala",
+      "river": "Pamba/Achankovil",
+      "basin": "West Flowing Rivers From Tadri to Kanyakumari",
+      "peak_flood_level_m": 65.47,
+      "danger_level_m": 10.0,
+      "calculated_risk_score": 30.3,
+      "precipitation_mm": 39.17,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-8",
+    "latitude": 9.3239,
+    "longitude": 77.9903,
+    "severity_level": "Orange",
+    "state_name": "Tamil Nadu",
+    "location_details": {
+      "station_name": "Irrukkankudi",
+      "state": "Tamil Nadu",
+      "river": "Vaippar",
+      "basin": "East flowing rivers between Pennar Kanyakumari",
+      "peak_flood_level_m": 85.83,
+      "danger_level_m": 50.5,
+      "calculated_risk_score": 56.26,
+      "precipitation_mm": 305.84,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-9",
+    "latitude": 9.3325,
+    "longitude": 76.6631,
+    "severity_level": "Yellow",
+    "state_name": "Kerala",
+    "location_details": {
+      "station_name": "Malakkara",
+      "state": "Kerala",
+      "river": "Pampa",
+      "basin": "West Flowing Rivers From Tadri to Kanyakumari",
+      "peak_flood_level_m": 13.6,
+      "danger_level_m": 7.0,
+      "calculated_risk_score": 9.44,
+      "precipitation_mm": 218.37,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-10",
+    "latitude": 9.36,
+    "longitude": 76.84,
+    "severity_level": "Orange",
+    "state_name": "Kerala",
+    "location_details": {
+      "station_name": "Madamon",
+      "state": "Kerala",
+      "river": "Pamba",
+      "basin": "West flowing rivers from Tapi to Tadri",
+      "peak_flood_level_m": 33.4,
+      "danger_level_m": 101.0,
+      "calculated_risk_score": 55.18,
+      "precipitation_mm": 253.66,
+      "rain_tier": "Heavy",
+      "reliability": "Caution"
+    }
+  },
+  {
+    "id": "hotspot-11",
+    "latitude": 9.4036,
+    "longitude": 76.6503,
+    "severity_level": "Yellow",
+    "state_name": "Kerala",
+    "location_details": {
+      "station_name": "Kallooppara",
+      "state": "Kerala",
+      "river": "Pampa/Manimala",
+      "basin": "West Flowing Rivers From Tadri to Kanyakumari",
+      "peak_flood_level_m": 65.85,
+      "danger_level_m": 6.0,
+      "calculated_risk_score": 28.78,
+      "precipitation_mm": 26.79,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-12",
+    "latitude": 9.53,
+    "longitude": 76.91,
+    "severity_level": "Yellow",
+    "state_name": "Kerala",
+    "location_details": {
+      "station_name": "Manikal",
+      "state": "Kerala",
+      "river": "Manimala",
+      "basin": "West flowing rivers from Tadri to Kanyakumari",
+      "peak_flood_level_m": 13.2,
+      "danger_level_m": 78.4,
+      "calculated_risk_score": 38.58,
+      "precipitation_mm": 340.07,
+      "rain_tier": "Heavy",
+      "reliability": "Caution"
+    }
+  },
+  {
+    "id": "hotspot-13",
+    "latitude": 9.5531,
+    "longitude": 78.5861,
+    "severity_level": "Orange",
+    "state_name": "Tamil Nadu",
+    "location_details": {
+      "station_name": "Paramakudi",
+      "state": "Tamil Nadu",
+      "river": "Vaigai",
+      "basin": "East flowing rivers between Pennar Kanyakumari",
+      "peak_flood_level_m": 85.88,
+      "danger_level_m": 40.5,
+      "calculated_risk_score": 52.22,
+      "precipitation_mm": 294.71,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-14",
+    "latitude": 9.6756,
+    "longitude": 76.6056,
+    "severity_level": "Yellow",
+    "state_name": "Kerala",
+    "location_details": {
+      "station_name": "Kidangoor",
+      "state": "Kerala",
+      "river": "Meenachil",
+      "basin": "West Flowing Rivers From Tadri to Kanyakumari",
+      "peak_flood_level_m": 15.58,
+      "danger_level_m": 7.16,
+      "calculated_risk_score": 9.52,
+      "precipitation_mm": 90.07,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-15",
+    "latitude": 9.845,
+    "longitude": 76.4667,
+    "severity_level": "Yellow",
+    "state_name": "Kerala",
+    "location_details": {
+      "station_name": "Ramamangalam",
+      "state": "Kerala",
+      "river": "Muvattupuzha",
+      "basin": "West Flowing Rivers From Tadri to Kanyakumari",
+      "peak_flood_level_m": 85.78,
+      "danger_level_m": 9.0,
+      "calculated_risk_score": 38.28,
+      "precipitation_mm": 80.0,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-16",
+    "latitude": 9.9906,
+    "longitude": 76.6322,
+    "severity_level": "Yellow",
+    "state_name": "Kerala",
+    "location_details": {
+      "station_name": "Kalampur",
+      "state": "Kerala",
+      "river": "Muvattupuzha/",
+      "basin": "West Flowing Rivers From Tadri to Kanyakumari",
+      "peak_flood_level_m": 18.22,
+      "danger_level_m": 13.64,
+      "calculated_risk_score": 13.11,
+      "precipitation_mm": 80.52,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-17",
+    "latitude": 10.0011,
+    "longitude": 77.485,
+    "severity_level": "Red",
+    "state_name": "Tamil Nadu",
+    "location_details": {
+      "station_name": "Theni",
+      "state": "Tamil Nadu",
+      "river": "Vaigai/Suruliar",
+      "basin": "East flowing rivers between Pennar Kanyakumari",
+      "peak_flood_level_m": 34.54,
+      "danger_level_m": 283.5,
+      "calculated_risk_score": 127.82,
+      "precipitation_mm": 120.4,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-18",
+    "latitude": 10.04,
+    "longitude": 76.62,
+    "severity_level": "Yellow",
+    "state_name": "Kerala",
+    "location_details": {
+      "station_name": "Pallippady",
+      "state": "Kerala",
+      "river": "Kothamangalam",
+      "basin": "West flowing rivers from Tadri to Kanyakumari",
+      "peak_flood_level_m": 15.8,
+      "danger_level_m": 24.8,
+      "calculated_risk_score": 17.29,
+      "precipitation_mm": 193.17,
+      "rain_tier": "Moderate",
+      "reliability": "Caution"
+    }
+  },
+  {
+    "id": "hotspot-19",
+    "latitude": 10.1833,
+    "longitude": 76.5,
+    "severity_level": "Yellow",
+    "state_name": "Kerala",
+    "location_details": {
+      "station_name": "Neeleeswaram",
+      "state": "Kerala",
+      "river": "Periyar",
+      "basin": "West Flowing Rivers From Tadri to Kanyakumari",
+      "peak_flood_level_m": 85.71,
+      "danger_level_m": 10.0,
+      "calculated_risk_score": 39.15,
+      "precipitation_mm": 162.54,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-20",
+    "latitude": 10.2814,
+    "longitude": 76.3153,
+    "severity_level": "Yellow",
+    "state_name": "Kerala",
+    "location_details": {
+      "station_name": "Arangali",
+      "state": "Kerala",
+      "river": "Periyar/Chalakudy",
+      "basin": "West Flowing Rivers From Tadri to Kanyakumari",
+      "peak_flood_level_m": 85.7,
+      "danger_level_m": 8.1,
+      "calculated_risk_score": 38.1,
+      "precipitation_mm": 116.11,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-21",
+    "latitude": 10.43,
+    "longitude": 76.24,
+    "severity_level": "Yellow",
+    "state_name": "Kerala",
+    "location_details": {
+      "station_name": "Palakadavu",
+      "state": "Kerala",
+      "river": "Karamana",
+      "basin": "West flowing rivers from Tadri to Kanyakumari",
+      "peak_flood_level_m": 23.5,
+      "danger_level_m": 9.3,
+      "calculated_risk_score": 14.34,
+      "precipitation_mm": 221.91,
+      "rain_tier": "Moderate",
+      "reliability": "Caution"
+    }
+  },
+  {
+    "id": "hotspot-22",
+    "latitude": 10.78,
+    "longitude": 76.575,
+    "severity_level": "Yellow",
+    "state_name": "Kerala",
+    "location_details": {
+      "station_name": "Pudur",
+      "state": "Kerala",
+      "river": "Bharathapuzha/ Kannadipuzha",
+      "basin": "West Flowing Rivers From Tadri to Kanyakumari",
+      "peak_flood_level_m": 40.4,
+      "danger_level_m": 64.5,
+      "calculated_risk_score": 42.24,
+      "precipitation_mm": 66.03,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-23",
+    "latitude": 10.85,
+    "longitude": 76.02,
+    "severity_level": "Yellow",
+    "state_name": "Kerala",
+    "location_details": {
+      "station_name": "Kumbidi",
+      "state": "Kerala",
+      "river": "Bharathapuzha",
+      "basin": "West Flowing Rivers From Tadri to Kanyakumari",
+      "peak_flood_level_m": 35.48,
+      "danger_level_m": 9.2,
+      "calculated_risk_score": 18.46,
+      "precipitation_mm": 116.41,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-24",
+    "latitude": 10.8808,
+    "longitude": 77.9847,
+    "severity_level": "Orange",
+    "state_name": "Tamil Nadu",
+    "location_details": {
+      "station_name": "Nallamaranpatty",
+      "state": "Tamil Nadu",
+      "river": "Cauvery/",
+      "basin": "Cauvery",
+      "peak_flood_level_m": 39.2,
+      "danger_level_m": 135.12,
+      "calculated_risk_score": 70.46,
+      "precipitation_mm": 140.9,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-25",
+    "latitude": 10.8992,
+    "longitude": 76.1972,
+    "severity_level": "Yellow",
+    "state_name": "Kerala",
+    "location_details": {
+      "station_name": "Pulamanthole",
+      "state": "Kerala",
+      "river": "Bharathapuzha/Pulanthodu",
+      "basin": "West Flowing Rivers From Tadri to Kanyakumari",
+      "peak_flood_level_m": 85.93,
+      "danger_level_m": 16.6,
+      "calculated_risk_score": 41.92,
+      "precipitation_mm": 170.5,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-26",
+    "latitude": 10.9433,
+    "longitude": 78.435,
+    "severity_level": "Orange",
+    "state_name": "Tamil Nadu",
+    "location_details": {
+      "station_name": "Musiri",
+      "state": "Tamil Nadu",
+      "river": "Cauvery",
+      "basin": "Cauvery",
+      "peak_flood_level_m": 85.73,
+      "danger_level_m": 83.11,
+      "calculated_risk_score": 69.11,
+      "precipitation_mm": 279.11,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-27",
+    "latitude": 10.95,
+    "longitude": 76.79,
+    "severity_level": "Red",
+    "state_name": "Tamil Nadu",
+    "location_details": {
+      "station_name": "Alandurai",
+      "state": "Tamil Nadu",
+      "river": "Noyyal",
+      "basin": "Cauvery",
+      "peak_flood_level_m": 116.4,
+      "danger_level_m": 445.96,
+      "calculated_risk_score": 225.35,
+      "precipitation_mm": 85.89,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-28",
+    "latitude": 11.0317,
+    "longitude": 77.8875,
+    "severity_level": "Orange",
+    "state_name": "Tamil Nadu",
+    "location_details": {
+      "station_name": "Elunuthimangalam",
+      "state": "Tamil Nadu",
+      "river": "Cauvery/Noyyal",
+      "basin": "Cauvery",
+      "peak_flood_level_m": 12.3,
+      "danger_level_m": 133.0,
+      "calculated_risk_score": 59.15,
+      "precipitation_mm": 189.7,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-29",
+    "latitude": 11.0569,
+    "longitude": 76.0394,
+    "severity_level": "Yellow",
+    "state_name": "Kerala",
+    "location_details": {
+      "station_name": "Karathodu",
+      "state": "Kerala",
+      "river": "Kadalundi",
+      "basin": "West Flowing Rivers From Tadri to Kanyakumari",
+      "peak_flood_level_m": 85.86,
+      "danger_level_m": 13.0,
+      "calculated_risk_score": 40.73,
+      "precipitation_mm": 215.5,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-30",
+    "latitude": 11.0811,
+    "longitude": 77.8903,
+    "severity_level": "Orange",
+    "state_name": "Tamil Nadu",
+    "location_details": {
+      "station_name": "Kodumudi",
+      "state": "Tamil Nadu",
+      "river": "Cauvery",
+      "basin": "Cauvery",
+      "peak_flood_level_m": 85.69,
+      "danger_level_m": 126.5,
+      "calculated_risk_score": 84.97,
+      "precipitation_mm": 35.33,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-31",
+    "latitude": 11.13,
+    "longitude": 76.68,
+    "severity_level": "Red",
+    "state_name": "Kerala",
+    "location_details": {
+      "station_name": "Kottathara",
+      "state": "Kerala",
+      "river": "Bhavani",
+      "basin": "Cauvery",
+      "peak_flood_level_m": 85.7,
+      "danger_level_m": 291.65,
+      "calculated_risk_score": 152.16,
+      "precipitation_mm": 220.49,
+      "rain_tier": "Moderate",
+      "reliability": "Caution"
+    }
+  },
+  {
+    "id": "hotspot-32",
+    "latitude": 11.2394,
+    "longitude": 76.0233,
+    "severity_level": "Yellow",
+    "state_name": "Kerala",
+    "location_details": {
+      "station_name": "Kuniyil",
+      "state": "Kerala",
+      "river": "Chaliyar",
+      "basin": "West Flowing Rivers From Tadri to Kanyakumari",
+      "peak_flood_level_m": 85.82,
+      "danger_level_m": 11.85,
+      "calculated_risk_score": 39.41,
+      "precipitation_mm": 76.27,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-33",
+    "latitude": 11.26,
+    "longitude": 76.24,
+    "severity_level": "Yellow",
+    "state_name": "Kerala",
+    "location_details": {
+      "station_name": "Chakkalakuth",
+      "state": "Kerala",
+      "river": "Kudhirapuzha",
+      "basin": "West flowing rivers from Tadri to Kanyakumari",
+      "peak_flood_level_m": 48.2,
+      "danger_level_m": 18.9,
+      "calculated_risk_score": 26.97,
+      "precipitation_mm": 41.47,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-34",
+    "latitude": 11.2878,
+    "longitude": 76.8911,
+    "severity_level": "Red",
+    "state_name": "Tamil Nadu",
+    "location_details": {
+      "station_name": "Nellithurai",
+      "state": "Tamil Nadu",
+      "river": "Cauvery/Bhavani",
+      "basin": "Cauvery",
+      "peak_flood_level_m": 21.32,
+      "danger_level_m": 307.0,
+      "calculated_risk_score": 133.23,
+      "precipitation_mm": 333.13,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-35",
+    "latitude": 11.32,
+    "longitude": 76.2,
+    "severity_level": "Yellow",
+    "state_name": "Kerala",
+    "location_details": {
+      "station_name": "Peruvampadam",
+      "state": "Kerala",
+      "river": "Chaliyar",
+      "basin": "West flowing rivers from Tapi to Tadri",
+      "peak_flood_level_m": 12.97,
+      "danger_level_m": 27.5,
+      "calculated_risk_score": 18.12,
+      "precipitation_mm": 338.66,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-36",
+    "latitude": 11.4778,
+    "longitude": 77.7,
+    "severity_level": "Orange",
+    "state_name": "Tamil Nadu",
+    "location_details": {
+      "station_name": "Urachikottai",
+      "state": "Tamil Nadu",
+      "river": "Cauvery",
+      "basin": "Cauvery",
+      "peak_flood_level_m": 86.08,
+      "danger_level_m": 164.0,
+      "calculated_risk_score": 101.65,
+      "precipitation_mm": 286.77,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-37",
+    "latitude": 11.49,
+    "longitude": 76.83,
+    "severity_level": "Red",
+    "state_name": "Tamil Nadu",
+    "location_details": {
+      "station_name": "Kukkalthurai",
+      "state": "Tamil Nadu",
+      "river": "Bhavani",
+      "basin": "Cauvery",
+      "peak_flood_level_m": 85.7,
+      "danger_level_m": 1496.8,
+      "calculated_risk_score": 633.61,
+      "precipitation_mm": 120.52,
+      "rain_tier": "Moderate",
+      "reliability": "Caution"
+    }
+  },
+  {
+    "id": "hotspot-38",
+    "latitude": 11.5728,
+    "longitude": 76.9192,
+    "severity_level": "Red",
+    "state_name": "Tamil Nadu",
+    "location_details": {
+      "station_name": "Thengumarahada",
+      "state": "Tamil Nadu",
+      "river": "Cauvery/Bhavani/",
+      "basin": "Cauvery",
+      "peak_flood_level_m": 85.77,
+      "danger_level_m": 342.0,
+      "calculated_risk_score": 171.3,
+      "precipitation_mm": 52.23,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-39",
+    "latitude": 11.625,
+    "longitude": 75.7844,
+    "severity_level": "Yellow",
+    "state_name": "Kerala",
+    "location_details": {
+      "station_name": "Kuttyadi",
+      "state": "Kerala",
+      "river": "Kuttyadi",
+      "basin": "West Flowing Rivers From Tadri to Kanyakumari",
+      "peak_flood_level_m": 85.84,
+      "danger_level_m": 6.95,
+      "calculated_risk_score": 38.48,
+      "precipitation_mm": 245.8,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-40",
+    "latitude": 11.8,
+    "longitude": 77.8,
+    "severity_level": "Red",
+    "state_name": "Tamil Nadu",
+    "location_details": {
+      "station_name": "Mettur Dam",
+      "state": "Tamil Nadu",
+      "river": "Cauvery",
+      "basin": "Cauvery",
+      "peak_flood_level_m": 116.35,
+      "danger_level_m": 244.14,
+      "calculated_risk_score": 145.08,
+      "precipitation_mm": 165.25,
+      "rain_tier": "Moderate",
+      "reliability": "Caution"
+    }
+  },
+  {
+    "id": "hotspot-41",
+    "latitude": 11.9814,
+    "longitude": 75.5875,
+    "severity_level": "Orange",
+    "state_name": "Kerala",
+    "location_details": {
+      "station_name": "Perumannu",
+      "state": "Kerala",
+      "river": "Valapatnam",
+      "basin": "West Flowing Rivers From Tadri to Kanyakumari",
+      "peak_flood_level_m": 116.5,
+      "danger_level_m": 18.2,
+      "calculated_risk_score": 54.12,
+      "precipitation_mm": 60.27,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-42",
+    "latitude": 12.18,
+    "longitude": 77.73,
+    "severity_level": "Red",
+    "state_name": "Karnataka",
+    "location_details": {
+      "station_name": "Biligundulu",
+      "state": "Karnataka",
+      "river": "Cauvery",
+      "basin": "Cauvery",
+      "peak_flood_level_m": 47.95,
+      "danger_level_m": 262.0,
+      "calculated_risk_score": 124.97,
+      "precipitation_mm": 183.41,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-43",
+    "latitude": 12.4167,
+    "longitude": 77.1925,
+    "severity_level": "Red",
+    "state_name": "Karnataka",
+    "location_details": {
+      "station_name": "T.K.Halli",
+      "state": "Karnataka",
+      "river": "Cauvery/Shimsha",
+      "basin": "Cauvery",
+      "peak_flood_level_m": 48.09,
+      "danger_level_m": 582.5,
+      "calculated_risk_score": 252.3,
+      "precipitation_mm": 31.35,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-44",
+    "latitude": 12.4792,
+    "longitude": 75.1472,
+    "severity_level": "Orange",
+    "state_name": "Kerala",
+    "location_details": {
+      "station_name": "Erinjipuzha",
+      "state": "Kerala",
+      "river": "Payaswani",
+      "basin": "West Flowing Rivers From Tadri to Kanyakumari",
+      "peak_flood_level_m": 85.78,
+      "danger_level_m": 19.03,
+      "calculated_risk_score": 43.74,
+      "precipitation_mm": 320.08,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-45",
+    "latitude": 12.5172,
+    "longitude": 77.4369,
+    "severity_level": "Red",
+    "state_name": "Karnataka",
+    "location_details": {
+      "station_name": "T. Bekkupe",
+      "state": "Karnataka",
+      "river": "Cauvery/Arkavathi",
+      "basin": "Cauvery",
+      "peak_flood_level_m": 35.8,
+      "danger_level_m": 605.5,
+      "calculated_risk_score": 257.04,
+      "precipitation_mm": 105.4,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-46",
+    "latitude": 12.555,
+    "longitude": 78.1386,
+    "severity_level": "Red",
+    "state_name": "Tamil Nadu",
+    "location_details": {
+      "station_name": "Gummanur",
+      "state": "Tamil Nadu",
+      "river": "Ponnaiyar",
+      "basin": "East flowing rivers between Pennar Kanyakumari",
+      "peak_flood_level_m": 86.14,
+      "danger_level_m": 495.0,
+      "calculated_risk_score": 233.78,
+      "precipitation_mm": 238.63,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-47",
+    "latitude": 12.6842,
+    "longitude": 78.5394,
+    "severity_level": "Red",
+    "state_name": "Tamil Nadu",
+    "location_details": {
+      "station_name": "Avarankuppam",
+      "state": "Tamil Nadu",
+      "river": "Palar",
+      "basin": "East flowing rivers between Pennar Kanyakumari",
+      "peak_flood_level_m": 15.99,
+      "danger_level_m": 368.21,
+      "calculated_risk_score": 154.3,
+      "precipitation_mm": 122.86,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-48",
+    "latitude": 12.8844,
+    "longitude": 75.0431,
+    "severity_level": "Yellow",
+    "state_name": "Karnataka",
+    "location_details": {
+      "station_name": "Bantwal",
+      "state": "Karnataka",
+      "river": "Nethravathi",
+      "basin": "West flowing rivers from Tadri to Kanyakumari",
+      "peak_flood_level_m": 47.76,
+      "danger_level_m": 9.0,
+      "calculated_risk_score": 23.74,
+      "precipitation_mm": 191.62,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-49",
+    "latitude": 12.9303,
+    "longitude": 74.9531,
+    "severity_level": "Yellow",
+    "state_name": "Karnataka",
+    "location_details": {
+      "station_name": "Addoor",
+      "state": "Karnataka",
+      "river": "Gurupur",
+      "basin": "West flowing rivers from Tadri to Kanyakumari",
+      "peak_flood_level_m": 95.6,
+      "danger_level_m": 6.5,
+      "calculated_risk_score": 41.93,
+      "precipitation_mm": 200.41,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-50",
+    "latitude": 12.9528,
+    "longitude": 75.7856,
+    "severity_level": "Red",
+    "state_name": "Karnataka",
+    "location_details": {
+      "station_name": "Sakleshpur",
+      "state": "Karnataka",
+      "river": "Cauvery/",
+      "basin": "Cauvery",
+      "peak_flood_level_m": 35.25,
+      "danger_level_m": 893.0,
+      "calculated_risk_score": 371.67,
+      "precipitation_mm": 81.0,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-51",
+    "latitude": 13.2942,
+    "longitude": 74.9808,
+    "severity_level": "Yellow",
+    "state_name": "Karnataka",
+    "location_details": {
+      "station_name": "Yennehole",
+      "state": "Karnataka",
+      "river": "Swarna/Yennehole",
+      "basin": "West flowing rivers from Tadri to Kanyakumari",
+      "peak_flood_level_m": 65.62,
+      "danger_level_m": 23.0,
+      "calculated_risk_score": 37.39,
+      "precipitation_mm": 339.96,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-52",
+    "latitude": 13.5214,
+    "longitude": 74.88,
+    "severity_level": "Orange",
+    "state_name": "Karnataka",
+    "location_details": {
+      "station_name": "Avershe",
+      "state": "Karnataka",
+      "river": "Sita",
+      "basin": "West flowing rivers from Tadri to Kanyakumari",
+      "peak_flood_level_m": 86.18,
+      "danger_level_m": 18.0,
+      "calculated_risk_score": 43.22,
+      "precipitation_mm": 275.79,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-53",
+    "latitude": 13.5811,
+    "longitude": 74.8536,
+    "severity_level": "Yellow",
+    "state_name": "Karnataka",
+    "location_details": {
+      "station_name": "Haladi",
+      "state": "Karnataka",
+      "river": "Haladi",
+      "basin": "West flowing rivers from Tadri to Kanyakumari",
+      "peak_flood_level_m": 85.75,
+      "danger_level_m": 8.0,
+      "calculated_risk_score": 39.38,
+      "precipitation_mm": 330.03,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-54",
+    "latitude": 13.7,
+    "longitude": 75.64,
+    "severity_level": "Red",
+    "state_name": "Karnataka",
+    "location_details": {
+      "station_name": "Bhadra Dam",
+      "state": "Karnataka",
+      "river": "Krishna",
+      "basin": "Krishna",
+      "peak_flood_level_m": 17.6,
+      "danger_level_m": 657.75,
+      "calculated_risk_score": 271.93,
+      "precipitation_mm": 315.29,
+      "rain_tier": "Heavy",
+      "reliability": "Caution"
+    }
+  },
+  {
+    "id": "hotspot-55",
+    "latitude": 13.9269,
+    "longitude": 75.585,
+    "severity_level": "Red",
+    "state_name": "Karnataka",
+    "location_details": {
+      "station_name": "Shimoga",
+      "state": "Karnataka",
+      "river": "Krishna/Tungabhadra",
+      "basin": "Krishna",
+      "peak_flood_level_m": 85.79,
+      "danger_level_m": 567.5,
+      "calculated_risk_score": 262.51,
+      "precipitation_mm": 217.31,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-56",
+    "latitude": 14.03,
+    "longitude": 75.29,
+    "severity_level": "Yellow",
+    "state_name": "Karnataka",
+    "location_details": {
+      "station_name": "Pulikukku",
+      "state": "Karnataka",
+      "river": "Kumaradhara",
+      "basin": "West flowing rivers from Tadri to Kanyakumari",
+      "peak_flood_level_m": 13.43,
+      "danger_level_m": 78.87,
+      "calculated_risk_score": 38.76,
+      "precipitation_mm": 324.22,
+      "rain_tier": "Heavy",
+      "reliability": "Caution"
+    }
+  },
+  {
+    "id": "hotspot-57",
+    "latitude": 14.4344,
+    "longitude": 74.5861,
+    "severity_level": "Yellow",
+    "state_name": "Karnataka",
+    "location_details": {
+      "station_name": "Santeguli",
+      "state": "Karnataka",
+      "river": "Aghanashini",
+      "basin": "West flowing rivers from Tadri to Kanyakumari",
+      "peak_flood_level_m": 48.32,
+      "danger_level_m": 17.0,
+      "calculated_risk_score": 26.3,
+      "precipitation_mm": 49.2,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-58",
+    "latitude": 14.8306,
+    "longitude": 75.6744,
+    "severity_level": "Red",
+    "state_name": "Karnataka",
+    "location_details": {
+      "station_name": "Haralahalli",
+      "state": "Karnataka",
+      "river": "Krishna/Tungabhadra",
+      "basin": "Krishna",
+      "peak_flood_level_m": 34.3,
+      "danger_level_m": 517.0,
+      "calculated_risk_score": 220.91,
+      "precipitation_mm": 84.67,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-59",
+    "latitude": 15.8833,
+    "longitude": 77.9572,
+    "severity_level": "Red",
+    "state_name": "Andhra Pradesh",
+    "location_details": {
+      "station_name": "Bawapuram",
+      "state": "Andhra Pradesh",
+      "river": "Krishna/ Tungabhadra",
+      "basin": "Krishna",
+      "peak_flood_level_m": 125.6,
+      "danger_level_m": 278.0,
+      "calculated_risk_score": 161.53,
+      "precipitation_mm": 34.93,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-60",
+    "latitude": 15.9483,
+    "longitude": 77.4264,
+    "severity_level": "Red",
+    "state_name": "Andhra Pradesh",
+    "location_details": {
+      "station_name": "Mantralayam",
+      "state": "Andhra Pradesh",
+      "river": "Krishna/Tungabha dra",
+      "basin": "Krishna",
+      "peak_flood_level_m": 65.93,
+      "danger_level_m": 312.0,
+      "calculated_risk_score": 151.82,
+      "precipitation_mm": 127.36,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-61",
+    "latitude": 16.0869,
+    "longitude": 78.8967,
+    "severity_level": "Red",
+    "state_name": "Telangana",
+    "location_details": {
+      "station_name": "Srisailam Dam",
+      "state": "Telangana",
+      "river": "Krishna",
+      "basin": "Krishna",
+      "peak_flood_level_m": 14.8,
+      "danger_level_m": 269.75,
+      "calculated_risk_score": 114.6,
+      "precipitation_mm": 148.26,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-62",
+    "latitude": 16.1833,
+    "longitude": 76.1833,
+    "severity_level": "Red",
+    "state_name": "Karnataka",
+    "location_details": {
+      "station_name": "Narayanpur Dam",
+      "state": "Karnataka",
+      "river": "Krishna",
+      "basin": "Krishna",
+      "peak_flood_level_m": 85.81,
+      "danger_level_m": 492.25,
+      "calculated_risk_score": 231.77,
+      "precipitation_mm": 109.55,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-63",
+    "latitude": 16.19,
+    "longitude": 74.7914,
+    "severity_level": "Red",
+    "state_name": "Karnataka",
+    "location_details": {
+      "station_name": "Gokak Falls",
+      "state": "Karnataka",
+      "river": "Krishna/ Ghataprabha",
+      "basin": "Krishna",
+      "peak_flood_level_m": 48.21,
+      "danger_level_m": 544.0,
+      "calculated_risk_score": 238.54,
+      "precipitation_mm": 293.48,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-64",
+    "latitude": 16.2592,
+    "longitude": 77.8411,
+    "severity_level": "Red",
+    "state_name": "Telangana",
+    "location_details": {
+      "station_name": "K. Agraharam",
+      "state": "Telangana",
+      "river": "Krishna",
+      "basin": "Krishna",
+      "peak_flood_level_m": 85.8,
+      "danger_level_m": 282.0,
+      "calculated_risk_score": 147.83,
+      "precipitation_mm": 137.73,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-65",
+    "latitude": 16.3822,
+    "longitude": 77.3572,
+    "severity_level": "Red",
+    "state_name": "Karnataka",
+    "location_details": {
+      "station_name": "Deosugur",
+      "state": "Karnataka",
+      "river": "Krishna",
+      "basin": "Krishna",
+      "peak_flood_level_m": 85.78,
+      "danger_level_m": 335.51,
+      "calculated_risk_score": 169.08,
+      "precipitation_mm": 112.71,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-66",
+    "latitude": 16.4911,
+    "longitude": 76.9231,
+    "severity_level": "Red",
+    "state_name": "Karnataka",
+    "location_details": {
+      "station_name": "Huvinhedigi",
+      "state": "Karnataka",
+      "river": "Krishna",
+      "basin": "Krishna",
+      "peak_flood_level_m": 85.8,
+      "danger_level_m": 356.24,
+      "calculated_risk_score": 177.9,
+      "precipitation_mm": 199.09,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-67",
+    "latitude": 16.5639,
+    "longitude": 74.5275,
+    "severity_level": "Red",
+    "state_name": "Karnataka",
+    "location_details": {
+      "station_name": "Sadalga (Seasonal)",
+      "state": "Karnataka",
+      "river": "Krishna/ Dudhganga",
+      "basin": "Krishna",
+      "peak_flood_level_m": 86.0,
+      "danger_level_m": 538.8,
+      "calculated_risk_score": 250.2,
+      "precipitation_mm": 66.5,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-68",
+    "latitude": 16.6753,
+    "longitude": 74.5736,
+    "severity_level": "Red",
+    "state_name": "Maharashtra",
+    "location_details": {
+      "station_name": "Terwad (Seasonal)",
+      "state": "Maharashtra",
+      "river": "Krishna/ Panchganga",
+      "basin": "Krishna",
+      "peak_flood_level_m": 42.6,
+      "danger_level_m": 536.0,
+      "calculated_risk_score": 233.04,
+      "precipitation_mm": 284.73,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-69",
+    "latitude": 16.6836,
+    "longitude": 74.6031,
+    "severity_level": "Red",
+    "state_name": "Maharashtra",
+    "location_details": {
+      "station_name": "Kurundwad",
+      "state": "Maharashtra",
+      "river": "Krishna",
+      "basin": "Krishna",
+      "peak_flood_level_m": 15.18,
+      "danger_level_m": 537.16,
+      "calculated_risk_score": 221.09,
+      "precipitation_mm": 44.6,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-70",
+    "latitude": 16.7375,
+    "longitude": 77.1253,
+    "severity_level": "Red",
+    "state_name": "Karnataka",
+    "location_details": {
+      "station_name": "Yadgir",
+      "state": "Karnataka",
+      "river": "Krishna/Bhima",
+      "basin": "Krishna",
+      "peak_flood_level_m": 85.82,
+      "danger_level_m": 360.5,
+      "calculated_risk_score": 180.5,
+      "precipitation_mm": 345.67,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-71",
+    "latitude": 16.7808,
+    "longitude": 74.6333,
+    "severity_level": "Red",
+    "state_name": "Maharashtra",
+    "location_details": {
+      "station_name": "Arjunwad (Seasonal)",
+      "state": "Maharashtra",
+      "river": "Krishna",
+      "basin": "Krishna",
+      "peak_flood_level_m": 13.5,
+      "danger_level_m": 540.7,
+      "calculated_risk_score": 223.22,
+      "precipitation_mm": 274.84,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-72",
+    "latitude": 16.855,
+    "longitude": 74.4967,
+    "severity_level": "Red",
+    "state_name": "Maharashtra",
+    "location_details": {
+      "station_name": "Samdoli (Seasonal)",
+      "state": "Maharashtra",
+      "river": "Krishna/Varna",
+      "basin": "Krishna",
+      "peak_flood_level_m": 15.99,
+      "danger_level_m": 543.15,
+      "calculated_risk_score": 224.05,
+      "precipitation_mm": 85.58,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-73",
+    "latitude": 16.9383,
+    "longitude": 81.7825,
+    "severity_level": "Yellow",
+    "state_name": "Andhra Pradesh",
+    "location_details": {
+      "station_name": "Dowlaiswaram(State Gov. Site)",
+      "state": "Andhra Pradesh",
+      "river": "Godavari",
+      "basin": "Godavari",
+      "peak_flood_level_m": 48.2,
+      "danger_level_m": 16.08,
+      "calculated_risk_score": 25.72,
+      "precipitation_mm": 21.82,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-74",
+    "latitude": 16.95,
+    "longitude": 74.53,
+    "severity_level": "Red",
+    "state_name": "Maharashtra",
+    "location_details": {
+      "station_name": "Nandre",
+      "state": "Maharashtra",
+      "river": "Yerala",
+      "basin": "Krishna",
+      "peak_flood_level_m": 29.4,
+      "danger_level_m": 542.21,
+      "calculated_risk_score": 230.27,
+      "precipitation_mm": 289.1,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-75",
+    "latitude": 17.0692,
+    "longitude": 73.45,
+    "severity_level": "Yellow",
+    "state_name": "Maharashtra",
+    "location_details": {
+      "station_name": "Niivali",
+      "state": "Maharashtra",
+      "river": "Bav",
+      "basin": "West flowing rivers from Tapi of Tadri",
+      "peak_flood_level_m": 17.83,
+      "danger_level_m": 11.0,
+      "calculated_risk_score": 12.95,
+      "precipitation_mm": 253.26,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-76",
+    "latitude": 17.1703,
+    "longitude": 76.3283,
+    "severity_level": "Red",
+    "state_name": "Karnataka",
+    "location_details": {
+      "station_name": "Deongaon Bridge",
+      "state": "Karnataka",
+      "river": "Krishna/Bhima",
+      "basin": "Krishna",
+      "peak_flood_level_m": 13.0,
+      "danger_level_m": 404.5,
+      "calculated_risk_score": 168.46,
+      "precipitation_mm": 260.57,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-77",
+    "latitude": 17.2031,
+    "longitude": 77.1572,
+    "severity_level": "Red",
+    "state_name": "Karnataka",
+    "location_details": {
+      "station_name": "Malkhed",
+      "state": "Karnataka",
+      "river": "Krishna/Bhima/Ka gna",
+      "basin": "Krishna",
+      "peak_flood_level_m": 85.78,
+      "danger_level_m": 398.0,
+      "calculated_risk_score": 195.05,
+      "precipitation_mm": 274.52,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-78",
+    "latitude": 17.2544,
+    "longitude": 77.4628,
+    "severity_level": "Red",
+    "state_name": "Telangana",
+    "location_details": {
+      "station_name": "Jewangi",
+      "state": "Telangana",
+      "river": "Krishna/Bhima/ Kagna",
+      "basin": "Krishna",
+      "peak_flood_level_m": 85.76,
+      "danger_level_m": 426.6,
+      "calculated_risk_score": 205.09,
+      "precipitation_mm": 44.43,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-79",
+    "latitude": 17.2722,
+    "longitude": 74.165,
+    "severity_level": "Red",
+    "state_name": "Maharashtra",
+    "location_details": {
+      "station_name": "Warunji",
+      "state": "Maharashtra",
+      "river": "Krishna/Koyna",
+      "basin": "Krishna",
+      "peak_flood_level_m": 85.99,
+      "danger_level_m": 565.2,
+      "calculated_risk_score": 261.19,
+      "precipitation_mm": 138.29,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-80",
+    "latitude": 17.2864,
+    "longitude": 75.6372,
+    "severity_level": "Red",
+    "state_name": "Karnataka",
+    "location_details": {
+      "station_name": "Kokangaon",
+      "state": "Karnataka",
+      "river": "Krishna/ Bhima/Borinala",
+      "basin": "Krishna",
+      "peak_flood_level_m": 15.8,
+      "danger_level_m": 457.6,
+      "calculated_risk_score": 189.59,
+      "precipitation_mm": 58.24,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-81",
+    "latitude": 17.2944,
+    "longitude": 74.1903,
+    "severity_level": "Red",
+    "state_name": "Maharashtra",
+    "location_details": {
+      "station_name": "Karad",
+      "state": "Maharashtra",
+      "river": "Krishna",
+      "basin": "Krishna",
+      "peak_flood_level_m": 86.04,
+      "danger_level_m": 567.04,
+      "calculated_risk_score": 262.96,
+      "precipitation_mm": 304.82,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-82",
+    "latitude": 17.4131,
+    "longitude": 75.8478,
+    "severity_level": "Red",
+    "state_name": "Maharashtra",
+    "location_details": {
+      "station_name": "Takli",
+      "state": "Maharashtra",
+      "river": "Krishna/Bhima",
+      "basin": "Krishna",
+      "peak_flood_level_m": 36.69,
+      "danger_level_m": 420.5,
+      "calculated_risk_score": 184.12,
+      "precipitation_mm": 225.69,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-83",
+    "latitude": 17.5342,
+    "longitude": 75.885,
+    "severity_level": "Red",
+    "state_name": "Maharashtra",
+    "location_details": {
+      "station_name": "Wadakbal",
+      "state": "Maharashtra",
+      "river": "Krishna/ Bhima/Sina",
+      "basin": "Krishna",
+      "peak_flood_level_m": 85.71,
+      "danger_level_m": 427.5,
+      "calculated_risk_score": 205.95,
+      "precipitation_mm": 129.2,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-84",
+    "latitude": 17.5731,
+    "longitude": 81.25,
+    "severity_level": "Yellow",
+    "state_name": "Andhra Pradesh",
+    "location_details": {
+      "station_name": "Kunavaram",
+      "state": "Andhra Pradesh",
+      "river": "Godavari",
+      "basin": "Godavari",
+      "peak_flood_level_m": 8.14,
+      "danger_level_m": 39.24,
+      "calculated_risk_score": 19.08,
+      "precipitation_mm": 40.97,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-85",
+    "latitude": 17.6681,
+    "longitude": 80.8772,
+    "severity_level": "Orange",
+    "state_name": "Telangana",
+    "location_details": {
+      "station_name": "Bhadrachalam",
+      "state": "Telangana",
+      "river": "Godavari",
+      "basin": "Godavari",
+      "peak_flood_level_m": 85.68,
+      "danger_level_m": 48.77,
+      "calculated_risk_score": 54.4,
+      "precipitation_mm": 122.62,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-86",
+    "latitude": 17.75,
+    "longitude": 77.9283,
+    "severity_level": "Red",
+    "state_name": "Telangana",
+    "location_details": {
+      "station_name": "Singur Dam",
+      "state": "Telangana",
+      "river": "Godavari/Manjira",
+      "basin": "Godavari",
+      "peak_flood_level_m": 85.9,
+      "danger_level_m": 523.6,
+      "calculated_risk_score": 244.45,
+      "precipitation_mm": 127.31,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-87",
+    "latitude": 17.8372,
+    "longitude": 80.8861,
+    "severity_level": "Orange",
+    "state_name": "Telangana",
+    "location_details": {
+      "station_name": "Dummugudem",
+      "state": "Telangana",
+      "river": "Godavari",
+      "basin": "Godavari",
+      "peak_flood_level_m": 54.4,
+      "danger_level_m": 55.0,
+      "calculated_risk_score": 45.22,
+      "precipitation_mm": 260.77,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-88",
+    "latitude": 17.9114,
+    "longitude": 75.0075,
+    "severity_level": "Red",
+    "state_name": "Maharashtra",
+    "location_details": {
+      "station_name": "Sarati",
+      "state": "Maharashtra",
+      "river": "Krishna/Bhima/ Nira",
+      "basin": "Krishna",
+      "peak_flood_level_m": 85.67,
+      "danger_level_m": 475.13,
+      "calculated_risk_score": 225.59,
+      "precipitation_mm": 230.39,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-89",
+    "latitude": 17.9722,
+    "longitude": 75.1392,
+    "severity_level": "Red",
+    "state_name": "Maharashtra",
+    "location_details": {
+      "station_name": "Narsingpur",
+      "state": "Maharashtra",
+      "river": "Krishna/Bhima",
+      "basin": "Krishna",
+      "peak_flood_level_m": 85.7,
+      "danger_level_m": 459.03,
+      "calculated_risk_score": 219.67,
+      "precipitation_mm": 312.78,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-90",
+    "latitude": 18.07,
+    "longitude": 75.12,
+    "severity_level": "Red",
+    "state_name": "Maharashtra",
+    "location_details": {
+      "station_name": "Ujani Dam",
+      "state": "Maharashtra",
+      "river": "Krishna",
+      "basin": "Krishna",
+      "peak_flood_level_m": 116.35,
+      "danger_level_m": 497.58,
+      "calculated_risk_score": 246.52,
+      "precipitation_mm": 175.83,
+      "rain_tier": "Moderate",
+      "reliability": "Caution"
+    }
+  },
+  {
+    "id": "hotspot-91",
+    "latitude": 18.0922,
+    "longitude": 73.4603,
+    "severity_level": "Yellow",
+    "state_name": "Maharashtra",
+    "location_details": {
+      "station_name": "Mahad",
+      "state": "Maharashtra",
+      "river": "Savitri",
+      "basin": "West flowing rivers from Tapi of Tadri",
+      "peak_flood_level_m": 17.0,
+      "danger_level_m": 11.0,
+      "calculated_risk_score": 11.44,
+      "precipitation_mm": 59.47,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-92",
+    "latitude": 18.2,
+    "longitude": 82.65,
+    "severity_level": "Red",
+    "state_name": "Andhra Pradesh",
+    "location_details": {
+      "station_name": "Kunturla",
+      "state": "Andhra Pradesh",
+      "river": "Machkund",
+      "basin": "Godavari",
+      "peak_flood_level_m": 85.74,
+      "danger_level_m": 858.16,
+      "calculated_risk_score": 378.99,
+      "precipitation_mm": 255.37,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-93",
+    "latitude": 18.2167,
+    "longitude": 77.9406,
+    "severity_level": "Red",
+    "state_name": "Telangana",
+    "location_details": {
+      "station_name": "Nizam Sagar(Stat Govt. Site)",
+      "state": "Telangana",
+      "river": "Godavari/Manjira",
+      "basin": "Godavari",
+      "peak_flood_level_m": 35.35,
+      "danger_level_m": 428.24,
+      "calculated_risk_score": 186.96,
+      "precipitation_mm": 271.06,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-94",
+    "latitude": 18.3133,
+    "longitude": 83.8842,
+    "severity_level": "Yellow",
+    "state_name": "Andhra Pradesh",
+    "location_details": {
+      "station_name": "Srikakulam",
+      "state": "Andhra Pradesh",
+      "river": "Nagavali",
+      "basin": "East flowing rivers between Mahanadi and Pennar",
+      "peak_flood_level_m": 47.82,
+      "danger_level_m": 10.8,
+      "calculated_risk_score": 24.57,
+      "precipitation_mm": 205.22,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-95",
+    "latitude": 18.4739,
+    "longitude": 74.5764,
+    "severity_level": "Red",
+    "state_name": "Maharashtra",
+    "location_details": {
+      "station_name": "Dhond",
+      "state": "Maharashtra",
+      "river": "Krishna/Bhima",
+      "basin": "Krishna",
+      "peak_flood_level_m": 67.2,
+      "danger_level_m": 505.0,
+      "calculated_risk_score": 230.42,
+      "precipitation_mm": 274.42,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-96",
+    "latitude": 18.5192,
+    "longitude": 73.1564,
+    "severity_level": "Yellow",
+    "state_name": "Maharashtra",
+    "location_details": {
+      "station_name": "Nagothane",
+      "state": "Maharashtra",
+      "river": "Amba",
+      "basin": "West flowing rivers from Tapi of Tadri",
+      "peak_flood_level_m": 85.71,
+      "danger_level_m": 9.0,
+      "calculated_risk_score": 38.87,
+      "precipitation_mm": 182.95,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-97",
+    "latitude": 18.6203,
+    "longitude": 79.8042,
+    "severity_level": "Orange",
+    "state_name": "Telangana",
+    "location_details": {
+      "station_name": "Eturunagaram",
+      "state": "Telangana",
+      "river": "Godavari",
+      "basin": "Godavari",
+      "peak_flood_level_m": 47.4,
+      "danger_level_m": 75.82,
+      "calculated_risk_score": 50.33,
+      "precipitation_mm": 192.5,
+      "rain_tier": "Moderate",
+      "reliability": "Caution"
+    }
+  },
+  {
+    "id": "hotspot-98",
+    "latitude": 18.7367,
+    "longitude": 73.1108,
+    "severity_level": "Yellow",
+    "state_name": "Maharashtra",
+    "location_details": {
+      "station_name": "Pen",
+      "state": "Maharashtra",
+      "river": "Bhogeswari",
+      "basin": "West flowing rivers from Tapi of Tadri",
+      "peak_flood_level_m": 13.8,
+      "danger_level_m": 13.0,
+      "calculated_risk_score": 11.58,
+      "precipitation_mm": 161.09,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-99",
+    "latitude": 18.8483,
+    "longitude": 83.8731,
+    "severity_level": "Orange",
+    "state_name": "Odisha",
+    "location_details": {
+      "station_name": "Kashinagar",
+      "state": "Odisha",
+      "river": "Vamsadhara",
+      "basin": "East flowing rivers between Mahanadi and Pennar",
+      "peak_flood_level_m": 164.8,
+      "danger_level_m": 54.6,
+      "calculated_risk_score": 87.81,
+      "precipitation_mm": 28.39,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-100",
+    "latitude": 19.0439,
+    "longitude": 77.4556,
+    "severity_level": "Red",
+    "state_name": "Maharashtra",
+    "location_details": {
+      "station_name": "Yelli",
+      "state": "Maharashtra",
+      "river": "Godavari",
+      "basin": "Godavari",
+      "peak_flood_level_m": 175.6,
+      "danger_level_m": 223.0,
+      "calculated_risk_score": 159.66,
+      "precipitation_mm": 55.6,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-101",
+    "latitude": 19.0833,
+    "longitude": 83.8056,
+    "severity_level": "Yellow",
+    "state_name": "Odisha",
+    "location_details": {
+      "station_name": "Gunupur",
+      "state": "Odisha",
+      "river": "Vamsadhara",
+      "basin": "East flowing rivers between Mahanadi and Pennar",
+      "peak_flood_level_m": 13.15,
+      "danger_level_m": 84.0,
+      "calculated_risk_score": 38.92,
+      "precipitation_mm": 30.37,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-102",
+    "latitude": 19.1081,
+    "longitude": 82.0228,
+    "severity_level": "Red",
+    "state_name": "Chhattisgarh",
+    "location_details": {
+      "station_name": "Jagdalpur",
+      "state": "Chhattisgarh",
+      "river": "Godavari/ Indravati",
+      "basin": "Godavari",
+      "peak_flood_level_m": 65.79,
+      "danger_level_m": 540.8,
+      "calculated_risk_score": 243.91,
+      "precipitation_mm": 230.02,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-103",
+    "latitude": 19.1622,
+    "longitude": 73.2544,
+    "severity_level": "Yellow",
+    "state_name": "Maharashtra",
+    "location_details": {
+      "station_name": "Badlapur",
+      "state": "Maharashtra",
+      "river": "Ulhas",
+      "basin": "West flowing rivers from Tapi of Tadri",
+      "peak_flood_level_m": 36.4,
+      "danger_level_m": 17.5,
+      "calculated_risk_score": 22.19,
+      "precipitation_mm": 123.74,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-104",
+    "latitude": 19.5167,
+    "longitude": 84.8833,
+    "severity_level": "Yellow",
+    "state_name": "Odisha",
+    "location_details": {
+      "station_name": "Purushottampur",
+      "state": "Odisha",
+      "river": "Rushikulya",
+      "basin": "East flowing rivers between Mahanadi and Pennar",
+      "peak_flood_level_m": 34.55,
+      "danger_level_m": 16.84,
+      "calculated_risk_score": 21.57,
+      "precipitation_mm": 187.83,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-105",
+    "latitude": 19.81,
+    "longitude": 79.38,
+    "severity_level": "Orange",
+    "state_name": "Maharashtra",
+    "location_details": {
+      "station_name": "Bamni (Balharsha)",
+      "state": "Maharashtra",
+      "river": "Wardha",
+      "basin": "Godavari",
+      "peak_flood_level_m": 35.09,
+      "danger_level_m": 174.0,
+      "calculated_risk_score": 85.45,
+      "precipitation_mm": 319.5,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-106",
+    "latitude": 19.8783,
+    "longitude": 74.4819,
+    "severity_level": "Red",
+    "state_name": "Maharashtra",
+    "location_details": {
+      "station_name": "Kopergaon",
+      "state": "Maharashtra",
+      "river": "Godavari",
+      "basin": "Godavari",
+      "peak_flood_level_m": 85.79,
+      "danger_level_m": 493.68,
+      "calculated_risk_score": 232.29,
+      "precipitation_mm": 102.27,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-107",
+    "latitude": 20.0019,
+    "longitude": 73.8033,
+    "severity_level": "Red",
+    "state_name": "Maharashtra",
+    "location_details": {
+      "station_name": "Nasik",
+      "state": "Maharashtra",
+      "river": "Godavari",
+      "basin": "Godavari",
+      "peak_flood_level_m": 38.6,
+      "danger_level_m": 559.6,
+      "calculated_risk_score": 240.1,
+      "precipitation_mm": 155.43,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-108",
+    "latitude": 20.1006,
+    "longitude": 73.2706,
+    "severity_level": "Orange",
+    "state_name": "Maharashtra",
+    "location_details": {
+      "station_name": "Ozerkheda",
+      "state": "Maharashtra",
+      "river": "Damanganga/ Wagh",
+      "basin": "West flowing rivers from  Tapi to Tadri",
+      "peak_flood_level_m": 25.8,
+      "danger_level_m": 90.0,
+      "calculated_risk_score": 47.83,
+      "precipitation_mm": 269.33,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-109",
+    "latitude": 20.2028,
+    "longitude": 73.2811,
+    "severity_level": "Orange",
+    "state_name": "Gujarat",
+    "location_details": {
+      "station_name": "Nanipalsan",
+      "state": "Gujarat",
+      "river": "Damanganga",
+      "basin": "West flowing rivers from  Tapi to Tadri",
+      "peak_flood_level_m": 117.05,
+      "danger_level_m": 102.0,
+      "calculated_risk_score": 88.08,
+      "precipitation_mm": 95.5,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-110",
+    "latitude": 20.2703,
+    "longitude": 72.9869,
+    "severity_level": "Orange",
+    "state_name": "Dadra and Nagar Haveli",
+    "location_details": {
+      "station_name": "Silvassa",
+      "state": "Dadra and Nagar Haveli",
+      "river": "Damanganga",
+      "basin": "West flowing rivers from  Tapi to Tadri",
+      "peak_flood_level_m": 85.88,
+      "danger_level_m": 30.0,
+      "calculated_risk_score": 46.51,
+      "precipitation_mm": 45.4,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-111",
+    "latitude": 20.475,
+    "longitude": 85.775,
+    "severity_level": "Yellow",
+    "state_name": "Odisha",
+    "location_details": {
+      "station_name": "Naraj",
+      "state": "Odisha",
+      "river": "Mahanadi",
+      "basin": "Mahanadi",
+      "peak_flood_level_m": 14.5,
+      "danger_level_m": 26.41,
+      "calculated_risk_score": 16.94,
+      "precipitation_mm": 115.62,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-112",
+    "latitude": 20.7947,
+    "longitude": 79.6478,
+    "severity_level": "Orange",
+    "state_name": "Maharashtra",
+    "location_details": {
+      "station_name": "Pauni",
+      "state": "Maharashtra",
+      "river": "Godavari/Pranhita/ Wainganga",
+      "basin": "Godavari",
+      "peak_flood_level_m": 47.73,
+      "danger_level_m": 227.73,
+      "calculated_risk_score": 110.51,
+      "precipitation_mm": 73.2,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-113",
+    "latitude": 20.8742,
+    "longitude": 76.9897,
+    "severity_level": "Orange",
+    "state_name": "Maharashtra",
+    "location_details": {
+      "station_name": "Gopalkheda",
+      "state": "Maharashtra",
+      "river": "Tapi/Purna",
+      "basin": "Tapi",
+      "peak_flood_level_m": 153.8,
+      "danger_level_m": 0.0,
+      "calculated_risk_score": 63.38,
+      "precipitation_mm": 326.8,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-114",
+    "latitude": 20.8897,
+    "longitude": 86.0142,
+    "severity_level": "Yellow",
+    "state_name": "Odisha",
+    "location_details": {
+      "station_name": "Jenapur",
+      "state": "Odisha",
+      "river": "Brahmani",
+      "basin": "Brahmni - Baitarni",
+      "peak_flood_level_m": 14.36,
+      "danger_level_m": 23.0,
+      "calculated_risk_score": 16.56,
+      "precipitation_mm": 286.68,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-115",
+    "latitude": 20.9156,
+    "longitude": 86.2747,
+    "severity_level": "Yellow",
+    "state_name": "Odisha",
+    "location_details": {
+      "station_name": "Akhuapada",
+      "state": "Odisha",
+      "river": "Baitarni",
+      "basin": "Brahmni - Baitarni",
+      "peak_flood_level_m": 12.44,
+      "danger_level_m": 17.83,
+      "calculated_risk_score": 13.37,
+      "precipitation_mm": 229.02,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-116",
+    "latitude": 20.9358,
+    "longitude": 76.4756,
+    "severity_level": "Red",
+    "state_name": "Maharashtra",
+    "location_details": {
+      "station_name": "Yerli",
+      "state": "Maharashtra",
+      "river": "Tapi/Purna",
+      "basin": "Tapi",
+      "peak_flood_level_m": 54.6,
+      "danger_level_m": 223.0,
+      "calculated_risk_score": 112.78,
+      "precipitation_mm": 307.58,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-117",
+    "latitude": 20.99,
+    "longitude": 76.73,
+    "severity_level": "Red",
+    "state_name": "Maharashtra",
+    "location_details": {
+      "station_name": "Wankhed",
+      "state": "Maharashtra",
+      "river": "Tapi",
+      "basin": "Tapi",
+      "peak_flood_level_m": 85.94,
+      "danger_level_m": 254.9,
+      "calculated_risk_score": 137.94,
+      "precipitation_mm": 285.21,
+      "rain_tier": "Heavy",
+      "reliability": "Caution"
+    }
+  },
+  {
+    "id": "hotspot-118",
+    "latitude": 21.0719,
+    "longitude": 75.9461,
+    "severity_level": "Orange",
+    "state_name": "Maharashtra",
+    "location_details": {
+      "station_name": "Hathnur",
+      "state": "Maharashtra",
+      "river": "Tapi",
+      "basin": "Tapi",
+      "peak_flood_level_m": 23.8,
+      "danger_level_m": 214.0,
+      "calculated_risk_score": 95.49,
+      "precipitation_mm": 81.57,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-119",
+    "latitude": 21.2,
+    "longitude": 72.82,
+    "severity_level": "Yellow",
+    "state_name": "Gujarat",
+    "location_details": {
+      "station_name": "Surat",
+      "state": "Gujarat",
+      "river": "Tapi",
+      "basin": "Tapi",
+      "peak_flood_level_m": 26.6,
+      "danger_level_m": 9.5,
+      "calculated_risk_score": 16.23,
+      "precipitation_mm": 314.54,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-120",
+    "latitude": 21.2111,
+    "longitude": 86.1206,
+    "severity_level": "Orange",
+    "state_name": "Odisha",
+    "location_details": {
+      "station_name": "Anandapur",
+      "state": "Odisha",
+      "river": "Baitarni",
+      "basin": "Brahmni - Baitarni",
+      "peak_flood_level_m": 65.8,
+      "danger_level_m": 38.36,
+      "calculated_risk_score": 42.74,
+      "precipitation_mm": 197.98,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-121",
+    "latitude": 21.29,
+    "longitude": 85.03,
+    "severity_level": "Orange",
+    "state_name": "Odisha",
+    "location_details": {
+      "station_name": "Rengali Dam U/S",
+      "state": "Odisha",
+      "river": "Brahmni",
+      "basin": "Brahmani and Baitarni",
+      "peak_flood_level_m": 21.2,
+      "danger_level_m": 125.4,
+      "calculated_risk_score": 60.25,
+      "precipitation_mm": 286.46,
+      "rain_tier": "Heavy",
+      "reliability": "Caution"
+    }
+  },
+  {
+    "id": "hotspot-122",
+    "latitude": 21.2994,
+    "longitude": 76.235,
+    "severity_level": "Orange",
+    "state_name": "Madhya Pradesh",
+    "location_details": {
+      "station_name": "Burhanpur",
+      "state": "Madhya Pradesh",
+      "river": "Tapi",
+      "basin": "Tapi",
+      "peak_flood_level_m": 48.1,
+      "danger_level_m": 220.98,
+      "calculated_risk_score": 109.42,
+      "precipitation_mm": 315.71,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-123",
+    "latitude": 21.55,
+    "longitude": 86.92,
+    "severity_level": "Yellow",
+    "state_name": "Odisha",
+    "location_details": {
+      "station_name": "Govindapur (Nh5 Road Bridge)",
+      "state": "Odisha",
+      "river": "Burhabalang",
+      "basin": "Subernarekha",
+      "peak_flood_level_m": 80.6,
+      "danger_level_m": 8.13,
+      "calculated_risk_score": 36.13,
+      "precipitation_mm": 124.94,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-124",
+    "latitude": 21.7678,
+    "longitude": 87.1642,
+    "severity_level": "Yellow",
+    "state_name": "Odisha",
+    "location_details": {
+      "station_name": "Rajghat",
+      "state": "Odisha",
+      "river": "Subarnarekha",
+      "basin": "Subarnarekha",
+      "peak_flood_level_m": 85.69,
+      "danger_level_m": 10.36,
+      "calculated_risk_score": 38.64,
+      "precipitation_mm": 56.32,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-125",
+    "latitude": 21.885,
+    "longitude": 73.6544,
+    "severity_level": "Orange",
+    "state_name": "Gujarat",
+    "location_details": {
+      "station_name": "Garudeshwar",
+      "state": "Gujarat",
+      "river": "Narmada",
+      "basin": "Narmada",
+      "peak_flood_level_m": 85.8,
+      "danger_level_m": 31.09,
+      "calculated_risk_score": 47.21,
+      "precipitation_mm": 95.22,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-126",
+    "latitude": 22.2197,
+    "longitude": 86.7167,
+    "severity_level": "Orange",
+    "state_name": "Odisha",
+    "location_details": {
+      "station_name": "Jamsholaghat",
+      "state": "Odisha",
+      "river": "Subarnarekha",
+      "basin": "Subarnarekha",
+      "peak_flood_level_m": 85.84,
+      "danger_level_m": 49.16,
+      "calculated_risk_score": 54.85,
+      "precipitation_mm": 160.95,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-127",
+    "latitude": 22.28,
+    "longitude": 76.47,
+    "severity_level": "Orange",
+    "state_name": "Madhya Pradesh",
+    "location_details": {
+      "station_name": "Indirasagar Dam",
+      "state": "Madhya Pradesh",
+      "river": "Narmada",
+      "basin": "Narmada",
+      "peak_flood_level_m": 13.6,
+      "danger_level_m": 263.35,
+      "calculated_risk_score": 112.42,
+      "precipitation_mm": 289.94,
+      "rain_tier": "Heavy",
+      "reliability": "Caution"
+    }
+  },
+  {
+    "id": "hotspot-128",
+    "latitude": 22.5992,
+    "longitude": 80.3639,
+    "severity_level": "Red",
+    "state_name": "Madhya Pradesh",
+    "location_details": {
+      "station_name": "Mandla",
+      "state": "Madhya Pradesh",
+      "river": "Narmada",
+      "basin": "Narmada",
+      "peak_flood_level_m": 85.8,
+      "danger_level_m": 437.8,
+      "calculated_risk_score": 211.16,
+      "precipitation_mm": 304.04,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-129",
+    "latitude": 22.7561,
+    "longitude": 77.7328,
+    "severity_level": "Red",
+    "state_name": "Madhya Pradesh",
+    "location_details": {
+      "station_name": "Hoshangabad",
+      "state": "Madhya Pradesh",
+      "river": "Narmada",
+      "basin": "Narmada",
+      "peak_flood_level_m": 56.2,
+      "danger_level_m": 293.8,
+      "calculated_risk_score": 140.01,
+      "precipitation_mm": 22.29,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-130",
+    "latitude": 22.8156,
+    "longitude": 86.2161,
+    "severity_level": "Orange",
+    "state_name": "Jharkhand",
+    "location_details": {
+      "station_name": "Jamshedpur",
+      "state": "Jharkhand",
+      "river": "Subarnarekha",
+      "basin": "Subarnarekha",
+      "peak_flood_level_m": 22.14,
+      "danger_level_m": 123.5,
+      "calculated_risk_score": 59.28,
+      "precipitation_mm": 188.55,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-131",
+    "latitude": 22.8381,
+    "longitude": 87.9031,
+    "severity_level": "Yellow",
+    "state_name": "West Bengal",
+    "location_details": {
+      "station_name": "Harinkhola",
+      "state": "West Bengal",
+      "river": "Bhagirathi/Damodar/ Mundeswari",
+      "basin": "Ganga - Brahmaputra -Meghna/Barak",
+      "peak_flood_level_m": 85.67,
+      "danger_level_m": 12.8,
+      "calculated_risk_score": 40.22,
+      "precipitation_mm": 157.75,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-132",
+    "latitude": 23.0308,
+    "longitude": 79.0156,
+    "severity_level": "Red",
+    "state_name": "Madhya Pradesh",
+    "location_details": {
+      "station_name": "Barmanghat",
+      "state": "Madhya Pradesh",
+      "river": "Narmada",
+      "basin": "Narmada",
+      "peak_flood_level_m": 27.88,
+      "danger_level_m": 323.0,
+      "calculated_risk_score": 140.8,
+      "precipitation_mm": 93.3,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-133",
+    "latitude": 23.0542,
+    "longitude": 73.7167,
+    "severity_level": "Orange",
+    "state_name": "Gujarat",
+    "location_details": {
+      "station_name": "Panam Dam",
+      "state": "Gujarat",
+      "river": "Mahi/Panam",
+      "basin": "Mahi",
+      "peak_flood_level_m": 85.71,
+      "danger_level_m": 128.0,
+      "calculated_risk_score": 85.72,
+      "precipitation_mm": 59.56,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-134",
+    "latitude": 23.1333,
+    "longitude": 75.5147,
+    "severity_level": "Red",
+    "state_name": "Madhya Pradesh",
+    "location_details": {
+      "station_name": "Dhareri",
+      "state": "Madhya Pradesh",
+      "river": "Ganga/Yamuna/ Chambal",
+      "basin": "Ganga - Brahmaputra - Meghna/Barak",
+      "peak_flood_level_m": 85.73,
+      "danger_level_m": 479.5,
+      "calculated_risk_score": 226.77,
+      "precipitation_mm": 131.41,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-135",
+    "latitude": 23.1683,
+    "longitude": 75.7711,
+    "severity_level": "Red",
+    "state_name": "Madhya Pradesh",
+    "location_details": {
+      "station_name": "Ujjain.",
+      "state": "Madhya Pradesh",
+      "river": "Ganga/Yamuna/ Chambal/Shipra",
+      "basin": "Ganga - Brahmaputra - Meghna/Barak",
+      "peak_flood_level_m": 51.6,
+      "danger_level_m": 477.0,
+      "calculated_risk_score": 213.33,
+      "precipitation_mm": 331.16,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-136",
+    "latitude": 23.2247,
+    "longitude": 88.3742,
+    "severity_level": "Yellow",
+    "state_name": "West Bengal",
+    "location_details": {
+      "station_name": "Patna (Lgd) Kalna Ebb",
+      "state": "West Bengal",
+      "river": "Bhagirathi",
+      "basin": "Ganga - Brahmaputra -Meghna/Barak",
+      "peak_flood_level_m": 35.58,
+      "danger_level_m": 7.03,
+      "calculated_risk_score": 17.69,
+      "precipitation_mm": 126.66,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-137",
+    "latitude": 23.3064,
+    "longitude": 73.8261,
+    "severity_level": "Orange",
+    "state_name": "Gujarat",
+    "location_details": {
+      "station_name": "Kadana Dam",
+      "state": "Gujarat",
+      "river": "Mahi",
+      "basin": "Mahi",
+      "peak_flood_level_m": 85.73,
+      "danger_level_m": 127.71,
+      "calculated_risk_score": 86.41,
+      "precipitation_mm": 191.2,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-138",
+    "latitude": 23.3553,
+    "longitude": 88.6061,
+    "severity_level": "Yellow",
+    "state_name": "West Bengal",
+    "location_details": {
+      "station_name": "Hanskhali",
+      "state": "West Bengal",
+      "river": "Bhagirathi/Churni",
+      "basin": "Ganga - Brahmaputra -Meghna/Barak",
+      "peak_flood_level_m": 85.86,
+      "danger_level_m": 8.59,
+      "calculated_risk_score": 39.19,
+      "precipitation_mm": 252.0,
+      "rain_tier": "Heavy",
+      "reliability": "Caution"
+    }
+  },
+  {
+    "id": "hotspot-139",
+    "latitude": 23.4806,
+    "longitude": 75.6364,
+    "severity_level": "Red",
+    "state_name": "Madhya Pradesh",
+    "location_details": {
+      "station_name": "Mahidpur",
+      "state": "Madhya Pradesh",
+      "river": "Ganga/Yamuna/ Chambal/Shipra",
+      "basin": "Ganga - Brahmaputra - Meghna/Barak",
+      "peak_flood_level_m": 85.83,
+      "danger_level_m": 454.0,
+      "calculated_risk_score": 216.66,
+      "precipitation_mm": 140.0,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-140",
+    "latitude": 23.6167,
+    "longitude": 87.7008,
+    "severity_level": "Orange",
+    "state_name": "West Bengal",
+    "location_details": {
+      "station_name": "Gheropara",
+      "state": "West Bengal",
+      "river": "Bhagirathi/Ajoy",
+      "basin": "Ganga - Brahmaputra -Meghna/Barak",
+      "peak_flood_level_m": 85.74,
+      "danger_level_m": 39.42,
+      "calculated_risk_score": 52.01,
+      "precipitation_mm": 340.69,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-141",
+    "latitude": 23.6275,
+    "longitude": 74.5453,
+    "severity_level": "Red",
+    "state_name": "Rajasthan",
+    "location_details": {
+      "station_name": "Mahi Dam",
+      "state": "Rajasthan",
+      "river": "Mahi",
+      "basin": "Mahi",
+      "peak_flood_level_m": 85.73,
+      "danger_level_m": 281.5,
+      "calculated_risk_score": 148.82,
+      "precipitation_mm": 337.61,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-142",
+    "latitude": 23.65,
+    "longitude": 88.14,
+    "severity_level": "Yellow",
+    "state_name": "West Bengal",
+    "location_details": {
+      "station_name": "Katwa",
+      "state": "West Bengal",
+      "river": "Bhagirathi-II (WB)*",
+      "basin": "Ganga",
+      "peak_flood_level_m": 85.71,
+      "danger_level_m": 14.32,
+      "calculated_risk_score": 40.52,
+      "precipitation_mm": 103.09,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-143",
+    "latitude": 23.7233,
+    "longitude": 75.3469,
+    "severity_level": "Red",
+    "state_name": "Madhya Pradesh",
+    "location_details": {
+      "station_name": "Tal.",
+      "state": "Madhya Pradesh",
+      "river": "Ganga/Yamuna/ Chambal",
+      "basin": "Ganga - Brahmaputra - Meghna/Barak",
+      "peak_flood_level_m": 42.2,
+      "danger_level_m": 443.0,
+      "calculated_risk_score": 195.07,
+      "precipitation_mm": 184.09,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-144",
+    "latitude": 24.0031,
+    "longitude": 88.1375,
+    "severity_level": "Orange",
+    "state_name": "West Bengal",
+    "location_details": {
+      "station_name": "Englishbazar",
+      "state": "West Bengal",
+      "river": "Padma/Mahananda",
+      "basin": "Ganga - Brahmaputra -Meghna/Barak",
+      "peak_flood_level_m": 116.4,
+      "danger_level_m": 23.5,
+      "calculated_risk_score": 56.56,
+      "precipitation_mm": 119.29,
+      "rain_tier": "Moderate",
+      "reliability": "Caution"
+    }
+  },
+  {
+    "id": "hotspot-145",
+    "latitude": 24.0789,
+    "longitude": 91.5919,
+    "severity_level": "Orange",
+    "state_name": "Tripura",
+    "location_details": {
+      "station_name": "Khowai",
+      "state": "Tripura",
+      "river": "Meghna/",
+      "basin": "Ganga - Brahmaputra - Meghna/Barak",
+      "peak_flood_level_m": 85.7,
+      "danger_level_m": 26.0,
+      "calculated_risk_score": 45.25,
+      "precipitation_mm": 114.0,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-146",
+    "latitude": 24.0911,
+    "longitude": 88.2431,
+    "severity_level": "Yellow",
+    "state_name": "West Bengal",
+    "location_details": {
+      "station_name": "Berhampore",
+      "state": "West Bengal",
+      "river": "Bhagirathi",
+      "basin": "Ganga - Brahmaputra -Meghna/Barak",
+      "peak_flood_level_m": 85.78,
+      "danger_level_m": 17.22,
+      "calculated_risk_score": 41.27,
+      "precipitation_mm": 32.17,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-147",
+    "latitude": 24.4297,
+    "longitude": 76.6039,
+    "severity_level": "Red",
+    "state_name": "Rajasthan",
+    "location_details": {
+      "station_name": "Aklera.",
+      "state": "Rajasthan",
+      "river": "Ganga/Yamuna/ Chambal/ Kalisindh/Parwan",
+      "basin": "Ganga - Brahmaputra - Meghna/Barak",
+      "peak_flood_level_m": 85.74,
+      "danger_level_m": 309.0,
+      "calculated_risk_score": 159.12,
+      "precipitation_mm": 221.16,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-148",
+    "latitude": 24.4939,
+    "longitude": 72.7917,
+    "severity_level": "Red",
+    "state_name": "Rajasthan",
+    "location_details": {
+      "station_name": "Banas At Abu Road",
+      "state": "Rajasthan",
+      "river": "Banas",
+      "basin": "West flowing rivers of Kutchh and Saurashtra including Luni",
+      "peak_flood_level_m": 85.73,
+      "danger_level_m": 259.0,
+      "calculated_risk_score": 138.9,
+      "precipitation_mm": 185.88,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-149",
+    "latitude": 24.6411,
+    "longitude": 79.2833,
+    "severity_level": "Red",
+    "state_name": "Madhya Pradesh",
+    "location_details": {
+      "station_name": "Garrauli",
+      "state": "Madhya Pradesh",
+      "river": "Ganga/Yamuna/Betw/Dhasan",
+      "basin": "Ganga - Brahmaputra - Meghna/Barak",
+      "peak_flood_level_m": 86.14,
+      "danger_level_m": 204.0,
+      "calculated_risk_score": 116.16,
+      "precipitation_mm": 36.99,
+      "rain_tier": "Light",
+      "reliability": "Caution"
+    }
+  },
+  {
+    "id": "hotspot-150",
+    "latitude": 24.83,
+    "longitude": 78.08,
+    "severity_level": "Yellow",
+    "state_name": "Madhya Pradesh",
+    "location_details": {
+      "station_name": "Mohanpur",
+      "state": "Madhya Pradesh",
+      "river": "Kangsabati",
+      "basin": "Ganga",
+      "peak_flood_level_m": 35.52,
+      "danger_level_m": 25.73,
+      "calculated_risk_score": 25.06,
+      "precipitation_mm": 111.95,
+      "rain_tier": "Light",
+      "reliability": "Caution"
+    }
+  },
+  {
+    "id": "hotspot-151",
+    "latitude": 24.8667,
+    "longitude": 74.6356,
+    "severity_level": "Red",
+    "state_name": "Rajasthan",
+    "location_details": {
+      "station_name": "Chittorgarh",
+      "state": "Rajasthan",
+      "river": "Ganga/Yamuna/ Chambal/Banas/ Gambhiri",
+      "basin": "Ganga - Brahmaputra - Meghna/Barak",
+      "peak_flood_level_m": 85.87,
+      "danger_level_m": 407.9,
+      "calculated_risk_score": 199.32,
+      "precipitation_mm": 319.73,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-152",
+    "latitude": 25.2506,
+    "longitude": 75.035,
+    "severity_level": "Red",
+    "state_name": "Rajasthan",
+    "location_details": {
+      "station_name": "Bigod",
+      "state": "Rajasthan",
+      "river": "Ganga/Yamuna/ Chambal/Banas",
+      "basin": "Ganga - Brahmaputra - Meghna/Barak",
+      "peak_flood_level_m": 15.8,
+      "danger_level_m": 430.1,
+      "calculated_risk_score": 178.84,
+      "precipitation_mm": 99.06,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-153",
+    "latitude": 25.3833,
+    "longitude": 76.3339,
+    "severity_level": "Orange",
+    "state_name": "Rajasthan",
+    "location_details": {
+      "station_name": "Barod",
+      "state": "Rajasthan",
+      "river": "Ganga/Yamuna/ Chambal/ Kalisindh",
+      "basin": "Ganga - Brahmaputra - Meghna/Barak",
+      "peak_flood_level_m": 34.31,
+      "danger_level_m": 215.0,
+      "calculated_risk_score": 100.01,
+      "precipitation_mm": 67.82,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-154",
+    "latitude": 25.3853,
+    "longitude": 76.1519,
+    "severity_level": "Red",
+    "state_name": "Rajasthan",
+    "location_details": {
+      "station_name": "Mandawara",
+      "state": "Rajasthan",
+      "river": "Ganga/Yamuna/ Chambal",
+      "basin": "Ganga - Brahmaputra - Meghna/Barak",
+      "peak_flood_level_m": 85.79,
+      "danger_level_m": 220.0,
+      "calculated_risk_score": 123.29,
+      "precipitation_mm": 181.52,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-155",
+    "latitude": 25.4833,
+    "longitude": 80.3133,
+    "severity_level": "Orange",
+    "state_name": "Uttar Pradesh",
+    "location_details": {
+      "station_name": "Banda",
+      "state": "Uttar Pradesh",
+      "river": "Ganga/Yamuna/Ken",
+      "basin": "Ganga - Brahmaputra - Meghna/Barak",
+      "peak_flood_level_m": 12.69,
+      "danger_level_m": 104.0,
+      "calculated_risk_score": 48.65,
+      "precipitation_mm": 345.26,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-156",
+    "latitude": 25.5006,
+    "longitude": 86.75,
+    "severity_level": "Yellow",
+    "state_name": "Bihar",
+    "location_details": {
+      "station_name": "Baltara",
+      "state": "Bihar",
+      "river": "Ganga/Kosi",
+      "basin": "Ganga - Brahmaputra - Meghna/Barak",
+      "peak_flood_level_m": 13.41,
+      "danger_level_m": 33.85,
+      "calculated_risk_score": 19.39,
+      "precipitation_mm": 99.88,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-157",
+    "latitude": 25.6833,
+    "longitude": 76.4833,
+    "severity_level": "Red",
+    "state_name": "Madhya Pradesh",
+    "location_details": {
+      "station_name": "Khatoli",
+      "state": "Madhya Pradesh",
+      "river": "Ganga/Yamuna/",
+      "basin": "Ganga - Brahmaputra - Meghna/Barak",
+      "peak_flood_level_m": 86.0,
+      "danger_level_m": 202.0,
+      "calculated_risk_score": 116.54,
+      "precipitation_mm": 241.8,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-158",
+    "latitude": 25.8071,
+    "longitude": 79.4085,
+    "severity_level": "Orange",
+    "state_name": "Uttar Pradesh",
+    "location_details": {
+      "station_name": "Mohna",
+      "state": "Uttar Pradesh",
+      "river": "Ganga/Yamuna /Betwa",
+      "basin": "Ganga - Brahmaputra - Meghna/Barak",
+      "peak_flood_level_m": 85.78,
+      "danger_level_m": 122.66,
+      "calculated_risk_score": 84.9,
+      "precipitation_mm": 271.33,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-159",
+    "latitude": 25.8478,
+    "longitude": 87.8031,
+    "severity_level": "Yellow",
+    "state_name": "Bihar",
+    "location_details": {
+      "station_name": "Dhengraghat",
+      "state": "Bihar",
+      "river": "Ganga/Mahananda",
+      "basin": "Ganga - Brahmaputra - Meghna/Barak",
+      "peak_flood_level_m": 48.88,
+      "danger_level_m": 35.65,
+      "calculated_risk_score": 34.29,
+      "precipitation_mm": 98.42,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-160",
+    "latitude": 25.8633,
+    "longitude": 76.5767,
+    "severity_level": "Orange",
+    "state_name": "Madhya Pradesh",
+    "location_details": {
+      "station_name": "Pali",
+      "state": "Madhya Pradesh",
+      "river": "Ganga/Yamuna/ Chambal/",
+      "basin": "Ganga - Brahmaputra - Meghna/Barak",
+      "peak_flood_level_m": 35.41,
+      "danger_level_m": 198.0,
+      "calculated_risk_score": 94.82,
+      "precipitation_mm": 260.31,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-161",
+    "latitude": 25.95,
+    "longitude": 80.1478,
+    "severity_level": "Orange",
+    "state_name": "Uttar Pradesh",
+    "location_details": {
+      "station_name": "Shahijina",
+      "state": "Uttar Pradesh",
+      "river": "Ganga/Yamuna\n/Betwa",
+      "basin": "Ganga - Brahmaputra - Meghna/Barak",
+      "peak_flood_level_m": 35.2,
+      "danger_level_m": 104.54,
+      "calculated_risk_score": 56.63,
+      "precipitation_mm": 141.37,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-162",
+    "latitude": 25.9796,
+    "longitude": 80.1289,
+    "severity_level": "Orange",
+    "state_name": "Uttar Pradesh",
+    "location_details": {
+      "station_name": "Hamirpur",
+      "state": "Uttar Pradesh",
+      "river": "Ganga/Yamuna",
+      "basin": "Ganga - Brahmaputra - Meghna/Barak",
+      "peak_flood_level_m": 34.99,
+      "danger_level_m": 103.63,
+      "calculated_risk_score": 56.71,
+      "precipitation_mm": 228.66,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-163",
+    "latitude": 26.0,
+    "longitude": 76.6667,
+    "severity_level": "Orange",
+    "state_name": "Rajasthan",
+    "location_details": {
+      "station_name": "Baranwada",
+      "state": "Rajasthan",
+      "river": "Ganga/Yamuna/ Chambal/Banas",
+      "basin": "Ganga - Brahmaputra - Meghna/Barak",
+      "peak_flood_level_m": 45.92,
+      "danger_level_m": 198.0,
+      "calculated_risk_score": 98.84,
+      "precipitation_mm": 229.06,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-164",
+    "latitude": 26.0333,
+    "longitude": 85.9,
+    "severity_level": "Orange",
+    "state_name": "Bihar",
+    "location_details": {
+      "station_name": "Hayaghat",
+      "state": "Bihar",
+      "river": "Ganga/Kosi/Bagmati",
+      "basin": "Ganga - Brahmaputra - Meghna/Barak",
+      "peak_flood_level_m": 175.6,
+      "danger_level_m": 45.72,
+      "calculated_risk_score": 89.6,
+      "precipitation_mm": 196.81,
+      "rain_tier": "Moderate",
+      "reliability": "Caution"
+    }
+  },
+  {
+    "id": "hotspot-165",
+    "latitude": 26.0583,
+    "longitude": 81.0208,
+    "severity_level": "Orange",
+    "state_name": "Uttar Pradesh",
+    "location_details": {
+      "station_name": "Dalmau",
+      "state": "Uttar Pradesh",
+      "river": "Ganga",
+      "basin": "Ganga - Brahmaputra - Meghna",
+      "peak_flood_level_m": 85.8,
+      "danger_level_m": 99.36,
+      "calculated_risk_score": 74.24,
+      "precipitation_mm": 49.8,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-166",
+    "latitude": 26.1167,
+    "longitude": 85.8589,
+    "severity_level": "Yellow",
+    "state_name": "Bihar",
+    "location_details": {
+      "station_name": "Ekmighat",
+      "state": "Bihar",
+      "river": "Ganga/Kosi/ Bagmati/Adhwara",
+      "basin": "Ganga - Brahmaputra - Meghna/Barak",
+      "peak_flood_level_m": 34.64,
+      "danger_level_m": 46.94,
+      "calculated_risk_score": 34.3,
+      "precipitation_mm": 295.65,
+      "rain_tier": "Heavy",
+      "reliability": "Caution"
+    }
+  },
+  {
+    "id": "hotspot-167",
+    "latitude": 26.1453,
+    "longitude": 85.6922,
+    "severity_level": "Orange",
+    "state_name": "Bihar",
+    "location_details": {
+      "station_name": "Benibad",
+      "state": "Bihar",
+      "river": "Ganga/Kosi/ Bagmati",
+      "basin": "Ganga - Brahmaputra - Meghna/Barak",
+      "peak_flood_level_m": 65.5,
+      "danger_level_m": 48.68,
+      "calculated_risk_score": 46.31,
+      "precipitation_mm": 125.86,
+      "rain_tier": "Moderate",
+      "reliability": "Caution"
+    }
+  },
+  {
+    "id": "hotspot-168",
+    "latitude": 26.2,
+    "longitude": 79.7,
+    "severity_level": "Orange",
+    "state_name": "Uttar Pradesh",
+    "location_details": {
+      "station_name": "Kalpi",
+      "state": "Uttar Pradesh",
+      "river": "Ganga/Yamuna",
+      "basin": "Ganga - Brahmaputra - Meghna/Barak",
+      "peak_flood_level_m": 85.72,
+      "danger_level_m": 108.0,
+      "calculated_risk_score": 77.86,
+      "precipitation_mm": 81.55,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-169",
+    "latitude": 26.2333,
+    "longitude": 86.2594,
+    "severity_level": "Yellow",
+    "state_name": "Bihar",
+    "location_details": {
+      "station_name": "Jhanjharpur",
+      "state": "Bihar",
+      "river": "Ganga/Kosi/ Kamla-Balan",
+      "basin": "Ganga - Brahmaputra - Meghna/Barak",
+      "peak_flood_level_m": 48.0,
+      "danger_level_m": 50.0,
+      "calculated_risk_score": 39.28,
+      "precipitation_mm": 33.46,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-170",
+    "latitude": 26.2725,
+    "longitude": 77.2753,
+    "severity_level": "Orange",
+    "state_name": "Rajasthan",
+    "location_details": {
+      "station_name": "Manderial",
+      "state": "Rajasthan",
+      "river": "Ganga/Yamuna/ Chambal",
+      "basin": "Ganga - Brahmaputra - Meghna/Barak",
+      "peak_flood_level_m": 85.91,
+      "danger_level_m": 165.0,
+      "calculated_risk_score": 101.55,
+      "precipitation_mm": 214.99,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-171",
+    "latitude": 26.3089,
+    "longitude": 89.6756,
+    "severity_level": "Yellow",
+    "state_name": "West Bengal",
+    "location_details": {
+      "station_name": "Tufanganj",
+      "state": "West Bengal",
+      "river": "Brahmaputra/ Torsa/\nRaidak-i",
+      "basin": "Ganga - Brahmaputra -Meghna/Barak",
+      "peak_flood_level_m": 34.4,
+      "danger_level_m": 35.3,
+      "calculated_risk_score": 29.24,
+      "precipitation_mm": 243.6,
+      "rain_tier": "Heavy",
+      "reliability": "Caution"
+    }
+  },
+  {
+    "id": "hotspot-172",
+    "latitude": 26.3253,
+    "longitude": 89.2356,
+    "severity_level": "Orange",
+    "state_name": "West Bengal",
+    "location_details": {
+      "station_name": "Mathabhanga",
+      "state": "West Bengal",
+      "river": "Brahmaputra/ Jaldhaka",
+      "basin": "Ganga - Brahmaputra -Meghna/Barak",
+      "peak_flood_level_m": 85.66,
+      "danger_level_m": 48.2,
+      "calculated_risk_score": 53.58,
+      "precipitation_mm": 25.47,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-173",
+    "latitude": 26.3325,
+    "longitude": 88.8636,
+    "severity_level": "Orange",
+    "state_name": "West Bengal",
+    "location_details": {
+      "station_name": "Mekhliganj",
+      "state": "West Bengal",
+      "river": "Brahmaputra/ Teesta",
+      "basin": "Ganga - Brahmaputra -Meghna/Barak",
+      "peak_flood_level_m": 85.87,
+      "danger_level_m": 65.95,
+      "calculated_risk_score": 61.75,
+      "precipitation_mm": 188.99,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-174",
+    "latitude": 26.3792,
+    "longitude": 84.7317,
+    "severity_level": "Orange",
+    "state_name": "Bihar",
+    "location_details": {
+      "station_name": "Dumariaghat",
+      "state": "Bihar",
+      "river": "Ganga/Gandak",
+      "basin": "Ganga - Brahmaputra - Meghna/Barak",
+      "peak_flood_level_m": 47.94,
+      "danger_level_m": 62.22,
+      "calculated_risk_score": 44.52,
+      "precipitation_mm": 94.74,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-175",
+    "latitude": 26.4089,
+    "longitude": 85.8597,
+    "severity_level": "Orange",
+    "state_name": "Bihar",
+    "location_details": {
+      "station_name": "Saulighat",
+      "state": "Bihar",
+      "river": "Ganga/Kosi/\nBagmati/Adhwara/ Dhaus",
+      "basin": "Ganga - Brahmaputra - Meghna/Barak",
+      "peak_flood_level_m": 57.4,
+      "danger_level_m": 52.32,
+      "calculated_risk_score": 45.18,
+      "precipitation_mm": 232.91,
+      "rain_tier": "Moderate",
+      "reliability": "Caution"
+    }
+  },
+  {
+    "id": "hotspot-176",
+    "latitude": 26.4272,
+    "longitude": 79.4181,
+    "severity_level": "Orange",
+    "state_name": "Uttar Pradesh",
+    "location_details": {
+      "station_name": "Auraiya",
+      "state": "Uttar Pradesh",
+      "river": "Ganga/Yamuna",
+      "basin": "Ganga - Brahmaputra - Meghna/Barak",
+      "peak_flood_level_m": 86.16,
+      "danger_level_m": 113.0,
+      "calculated_risk_score": 80.01,
+      "precipitation_mm": 77.54,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-177",
+    "latitude": 26.46,
+    "longitude": 89.86,
+    "severity_level": "Orange",
+    "state_name": "West Bengal",
+    "location_details": {
+      "station_name": "L.R.P. Crossing",
+      "state": "West Bengal",
+      "river": "raidak-ii",
+      "basin": "River Basin",
+      "peak_flood_level_m": 85.69,
+      "danger_level_m": 48.42,
+      "calculated_risk_score": 55.03,
+      "precipitation_mm": 248.01,
+      "rain_tier": "Heavy",
+      "reliability": "Caution"
+    }
+  },
+  {
+    "id": "hotspot-178",
+    "latitude": 26.4694,
+    "longitude": 80.3764,
+    "severity_level": "Orange",
+    "state_name": "Uttar Pradesh",
+    "location_details": {
+      "station_name": "Kanpur",
+      "state": "Uttar Pradesh",
+      "river": "Ganga",
+      "basin": "Ganga - Brahmaputra - Meghna",
+      "peak_flood_level_m": 65.68,
+      "danger_level_m": 113.0,
+      "calculated_risk_score": 72.25,
+      "precipitation_mm": 147.62,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-179",
+    "latitude": 26.47,
+    "longitude": 89.79,
+    "severity_level": "Orange",
+    "state_name": "West Bengal",
+    "location_details": {
+      "station_name": "L.R.P. Crossing",
+      "state": "West Bengal",
+      "river": "raidak-ii",
+      "basin": "River Basin",
+      "peak_flood_level_m": 116.5,
+      "danger_level_m": 48.42,
+      "calculated_risk_score": 67.84,
+      "precipitation_mm": 329.12,
+      "rain_tier": "Heavy",
+      "reliability": "Caution"
+    }
+  },
+  {
+    "id": "hotspot-180",
+    "latitude": 26.5628,
+    "longitude": 88.7583,
+    "severity_level": "Yellow",
+    "state_name": "West Bengal",
+    "location_details": {
+      "station_name": "Domohani",
+      "state": "West Bengal",
+      "river": "Brahmaputra/ Teesta",
+      "basin": "Ganga - Brahmaputra -Meghna/Barak",
+      "peak_flood_level_m": 12.22,
+      "danger_level_m": 85.95,
+      "calculated_risk_score": 39.54,
+      "precipitation_mm": 65.38,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-181",
+    "latitude": 26.5833,
+    "longitude": 86.1481,
+    "severity_level": "Orange",
+    "state_name": "Bihar",
+    "location_details": {
+      "station_name": "Jainagar",
+      "state": "Bihar",
+      "river": "Ganga/Kosi/ Kamla-Balan",
+      "basin": "Ganga - Brahmaputra - Meghna/Barak",
+      "peak_flood_level_m": 48.05,
+      "danger_level_m": 67.75,
+      "calculated_risk_score": 47.0,
+      "precipitation_mm": 132.55,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-182",
+    "latitude": 26.6517,
+    "longitude": 80.7942,
+    "severity_level": "Orange",
+    "state_name": "Uttar Pradesh",
+    "location_details": {
+      "station_name": "Bani",
+      "state": "Uttar Pradesh",
+      "river": "Ganga/Gomti/Sai",
+      "basin": "Ganga - Brahmaputra - Meghna",
+      "peak_flood_level_m": 86.05,
+      "danger_level_m": 115.5,
+      "calculated_risk_score": 80.85,
+      "precipitation_mm": 57.45,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-183",
+    "latitude": 26.6656,
+    "longitude": 77.9667,
+    "severity_level": "Red",
+    "state_name": "Madhya Pradesh",
+    "location_details": {
+      "station_name": "Dholpur",
+      "state": "Madhya Pradesh",
+      "river": "Ganga/Yamuna\n/Chambal",
+      "basin": "Ganga - Brahmaputra - Meghna/Barak",
+      "peak_flood_level_m": 153.8,
+      "danger_level_m": 130.79,
+      "calculated_risk_score": 115.69,
+      "precipitation_mm": 325.15,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-184",
+    "latitude": 26.7153,
+    "longitude": 84.9586,
+    "severity_level": "Orange",
+    "state_name": "Bihar",
+    "location_details": {
+      "station_name": "Lalbegiyaghat",
+      "state": "Bihar",
+      "river": "Ganga/Burhi Gandak",
+      "basin": "Ganga - Brahmaputra - Meghna/Barak",
+      "peak_flood_level_m": 131.4,
+      "danger_level_m": 63.2,
+      "calculated_risk_score": 79.59,
+      "precipitation_mm": 309.52,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-185",
+    "latitude": 26.7228,
+    "longitude": 85.3231,
+    "severity_level": "Orange",
+    "state_name": "Bihar",
+    "location_details": {
+      "station_name": "Dheng Bridge",
+      "state": "Bihar",
+      "river": "Ganga/Kosi/ Bagmati",
+      "basin": "Ganga - Brahmaputra - Meghna/Barak",
+      "peak_flood_level_m": 48.95,
+      "danger_level_m": 71.0,
+      "calculated_risk_score": 48.5,
+      "precipitation_mm": 105.12,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-186",
+    "latitude": 26.7292,
+    "longitude": 89.3236,
+    "severity_level": "Orange",
+    "state_name": "West Bengal",
+    "location_details": {
+      "station_name": "Hasimara",
+      "state": "West Bengal",
+      "river": "Brahmaputra/ Torsa",
+      "basin": "Ganga - Brahmaputra -Meghna/Barak",
+      "peak_flood_level_m": 85.67,
+      "danger_level_m": 116.9,
+      "calculated_risk_score": 82.35,
+      "precipitation_mm": 237.79,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-187",
+    "latitude": 26.75,
+    "longitude": 78.9833,
+    "severity_level": "Orange",
+    "state_name": "Uttar Pradesh",
+    "location_details": {
+      "station_name": "Etawah",
+      "state": "Uttar Pradesh",
+      "river": "Ganga/Yamuna",
+      "basin": "Ganga - Brahmaputra - Meghna/Barak",
+      "peak_flood_level_m": 35.05,
+      "danger_level_m": 121.92,
+      "calculated_risk_score": 64.42,
+      "precipitation_mm": 289.68,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-188",
+    "latitude": 26.8611,
+    "longitude": 80.9464,
+    "severity_level": "Orange",
+    "state_name": "Uttar Pradesh",
+    "location_details": {
+      "station_name": "Lucknow",
+      "state": "Uttar Pradesh",
+      "river": "Ganga/Gomti",
+      "basin": "Ganga - Brahmaputra - Meghna",
+      "peak_flood_level_m": 86.36,
+      "danger_level_m": 109.5,
+      "calculated_risk_score": 79.45,
+      "precipitation_mm": 203.22,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-189",
+    "latitude": 26.9347,
+    "longitude": 80.0361,
+    "severity_level": "Orange",
+    "state_name": "Uttar Pradesh",
+    "location_details": {
+      "station_name": "Ankinghat",
+      "state": "Uttar Pradesh",
+      "river": "Ganga",
+      "basin": "Ganga - Brahmaputra - Meghna",
+      "peak_flood_level_m": 65.5,
+      "danger_level_m": 124.0,
+      "calculated_risk_score": 76.86,
+      "precipitation_mm": 194.78,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-190",
+    "latitude": 27.01,
+    "longitude": 79.98,
+    "severity_level": "Orange",
+    "state_name": "Uttar Pradesh",
+    "location_details": {
+      "station_name": "Kannauj",
+      "state": "Uttar Pradesh",
+      "river": "Ganga",
+      "basin": "Ganga",
+      "peak_flood_level_m": 35.05,
+      "danger_level_m": 125.97,
+      "calculated_risk_score": 64.89,
+      "precipitation_mm": 99.81,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-191",
+    "latitude": 27.1911,
+    "longitude": 80.8,
+    "severity_level": "Orange",
+    "state_name": "Uttar Pradesh",
+    "location_details": {
+      "station_name": "Bhatpurwagat",
+      "state": "Uttar Pradesh",
+      "river": "Ganga/Gomti",
+      "basin": "Ganga - Brahmaputra - Meghna",
+      "peak_flood_level_m": 57.2,
+      "danger_level_m": 114.3,
+      "calculated_risk_score": 68.79,
+      "precipitation_mm": 50.72,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-192",
+    "latitude": 27.4042,
+    "longitude": 79.625,
+    "severity_level": "Orange",
+    "state_name": "Uttar Pradesh",
+    "location_details": {
+      "station_name": "Fatehgarh",
+      "state": "Uttar Pradesh",
+      "river": "Ganga",
+      "basin": "Ganga - Brahmaputra - Meghna",
+      "peak_flood_level_m": 48.0,
+      "danger_level_m": 137.6,
+      "calculated_risk_score": 76.03,
+      "precipitation_mm": 316.08,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-193",
+    "latitude": 27.4417,
+    "longitude": 83.9167,
+    "severity_level": "Orange",
+    "state_name": "Bihar",
+    "location_details": {
+      "station_name": "Tribeni",
+      "state": "Bihar",
+      "river": "Ganga/Gandak",
+      "basin": "Ganga - Brahmaputra - Meghna/Barak",
+      "peak_flood_level_m": 85.82,
+      "danger_level_m": 109.67,
+      "calculated_risk_score": 80.0,
+      "precipitation_mm": 317.14,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-194",
+    "latitude": 27.4958,
+    "longitude": 79.6972,
+    "severity_level": "Orange",
+    "state_name": "Uttar Pradesh",
+    "location_details": {
+      "station_name": "Dabri",
+      "state": "Uttar Pradesh",
+      "river": "Ganga/Ramganga",
+      "basin": "Ganga - Brahmaputra - Meghna",
+      "peak_flood_level_m": 36.8,
+      "danger_level_m": 137.3,
+      "calculated_risk_score": 70.91,
+      "precipitation_mm": 228.92,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-195",
+    "latitude": 27.9319,
+    "longitude": 78.8606,
+    "severity_level": "Orange",
+    "state_name": "Uttar Pradesh",
+    "location_details": {
+      "station_name": "Kachlabridge",
+      "state": "Uttar Pradesh",
+      "river": "Ganga",
+      "basin": "Ganga - Brahmaputra - Meghna",
+      "peak_flood_level_m": 65.47,
+      "danger_level_m": 162.0,
+      "calculated_risk_score": 91.67,
+      "precipitation_mm": 131.88,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-196",
+    "latitude": 28.1911,
+    "longitude": 78.4,
+    "severity_level": "Orange",
+    "state_name": "Uttar Pradesh",
+    "location_details": {
+      "station_name": "Narora",
+      "state": "Uttar Pradesh",
+      "river": "Ganga",
+      "basin": "Ganga - Brahmaputra - Meghna",
+      "peak_flood_level_m": 35.73,
+      "danger_level_m": 178.42,
+      "calculated_risk_score": 86.36,
+      "precipitation_mm": 135.24,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-197",
+    "latitude": 28.2992,
+    "longitude": 79.3667,
+    "severity_level": "Orange",
+    "state_name": "Uttar Pradesh",
+    "location_details": {
+      "station_name": "Bareilly",
+      "state": "Uttar Pradesh",
+      "river": "Ganga/Ramganga",
+      "basin": "Ganga - Brahmaputra - Meghna",
+      "peak_flood_level_m": 85.71,
+      "danger_level_m": 163.07,
+      "calculated_risk_score": 100.96,
+      "precipitation_mm": 259.57,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-198",
+    "latitude": 28.6625,
+    "longitude": 77.2467,
+    "severity_level": "Orange",
+    "state_name": "Delhi",
+    "location_details": {
+      "station_name": "Delhi Rly Bridge",
+      "state": "Delhi",
+      "river": "Ganga/Yamuna",
+      "basin": "Ganga - Brahmaputra - Meghna/Barak",
+      "peak_flood_level_m": 65.5,
+      "danger_level_m": 205.33,
+      "calculated_risk_score": 110.13,
+      "precipitation_mm": 316.05,
+      "rain_tier": "Heavy",
+      "reliability": "Caution"
+    }
+  },
+  {
+    "id": "hotspot-199",
+    "latitude": 28.7667,
+    "longitude": 78.1417,
+    "severity_level": "Orange",
+    "state_name": "Uttar Pradesh",
+    "location_details": {
+      "station_name": "Garhmukteshwar",
+      "state": "Uttar Pradesh",
+      "river": "Ganga",
+      "basin": "Ganga - Brahmaputra - Meghna",
+      "peak_flood_level_m": 48.02,
+      "danger_level_m": 199.33,
+      "calculated_risk_score": 100.71,
+      "precipitation_mm": 312.74,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-200",
+    "latitude": 28.8267,
+    "longitude": 78.7981,
+    "severity_level": "Orange",
+    "state_name": "Uttar Pradesh",
+    "location_details": {
+      "station_name": "Moradabad",
+      "state": "Uttar Pradesh",
+      "river": "Ganga/Ramganga",
+      "basin": "Ganga - Brahmaputra - Meghna",
+      "peak_flood_level_m": 48.16,
+      "danger_level_m": 190.6,
+      "calculated_risk_score": 97.06,
+      "precipitation_mm": 277.36,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-201",
+    "latitude": 29.3847,
+    "longitude": 77.1556,
+    "severity_level": "Orange",
+    "state_name": "Uttar Pradesh",
+    "location_details": {
+      "station_name": "Mawi",
+      "state": "Uttar Pradesh",
+      "river": "Ganga/Yamuna",
+      "basin": "Ganga - Brahmaputra - Meghna/Barak",
+      "peak_flood_level_m": 35.4,
+      "danger_level_m": 231.5,
+      "calculated_risk_score": 108.04,
+      "precipitation_mm": 231.87,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-202",
+    "latitude": 29.6956,
+    "longitude": 77.1428,
+    "severity_level": "Red",
+    "state_name": "Haryana",
+    "location_details": {
+      "station_name": "Karnal",
+      "state": "Haryana",
+      "river": "Ganga/Yamuna",
+      "basin": "Ganga - Brahmaputra - Meghna/Barak",
+      "peak_flood_level_m": 85.69,
+      "danger_level_m": 249.5,
+      "calculated_risk_score": 134.24,
+      "precipitation_mm": 47.77,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-203",
+    "latitude": 29.98,
+    "longitude": 78.19,
+    "severity_level": "Red",
+    "state_name": "Uttarakhand",
+    "location_details": {
+      "station_name": "Haridwar",
+      "state": "Uttarakhand",
+      "river": "Ganga",
+      "basin": "Ganga",
+      "peak_flood_level_m": 79.54,
+      "danger_level_m": 294.0,
+      "calculated_risk_score": 149.74,
+      "precipitation_mm": 73.34,
+      "rain_tier": "Light",
+      "reliability": "Caution"
+    }
+  },
+  {
+    "id": "hotspot-204",
+    "latitude": 30.1008,
+    "longitude": 78.3039,
+    "severity_level": "Red",
+    "state_name": "Uttarakhand",
+    "location_details": {
+      "station_name": "Rishikesh",
+      "state": "Uttarakhand",
+      "river": "Ganga",
+      "basin": "Ganga - Brahmaputra - Meghna",
+      "peak_flood_level_m": 35.92,
+      "danger_level_m": 340.5,
+      "calculated_risk_score": 152.37,
+      "precipitation_mm": 316.52,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-205",
+    "latitude": 30.2258,
+    "longitude": 78.7756,
+    "severity_level": "Red",
+    "state_name": "Uttarakhand",
+    "location_details": {
+      "station_name": "Shrinagar",
+      "state": "Uttarakhand",
+      "river": "Ganga/Alaknanda",
+      "basin": "Ganga - Brahmaputra - Meghna",
+      "peak_flood_level_m": 85.97,
+      "danger_level_m": 536.0,
+      "calculated_risk_score": 250.0,
+      "precipitation_mm": 220.12,
+      "rain_tier": "Moderate",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-206",
+    "latitude": 30.2556,
+    "longitude": 79.2211,
+    "severity_level": "Red",
+    "state_name": "Uttarakhand",
+    "location_details": {
+      "station_name": "Karanprayag",
+      "state": "Uttarakhand",
+      "river": "Ganga/Alaknanda/ Pinder",
+      "basin": "Ganga - Brahmaputra - Meghna",
+      "peak_flood_level_m": 85.8,
+      "danger_level_m": 773.0,
+      "calculated_risk_score": 343.54,
+      "precipitation_mm": 23.04,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-207",
+    "latitude": 30.3308,
+    "longitude": 78.4883,
+    "severity_level": "Red",
+    "state_name": "Uttarakhand",
+    "location_details": {
+      "station_name": "Koteswar",
+      "state": "Uttarakhand",
+      "river": "Ganga/Bhagirath",
+      "basin": "Ganga - Brahmaputra - Meghna",
+      "peak_flood_level_m": 41.2,
+      "danger_level_m": 545.0,
+      "calculated_risk_score": 234.68,
+      "precipitation_mm": 53.49,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-208",
+    "latitude": 30.4253,
+    "longitude": 77.5919,
+    "severity_level": "Red",
+    "state_name": "Himachal Pradesh",
+    "location_details": {
+      "station_name": "Paonta",
+      "state": "Himachal Pradesh",
+      "river": "Ganga/Yamuna",
+      "basin": "Ganga - Brahmaputra - Meghna/Barak",
+      "peak_flood_level_m": 85.76,
+      "danger_level_m": 384.5,
+      "calculated_risk_score": 189.43,
+      "precipitation_mm": 238.96,
+      "rain_tier": "Heavy",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-209",
+    "latitude": 30.5669,
+    "longitude": 79.5525,
+    "severity_level": "Red",
+    "state_name": "Uttarakhand",
+    "location_details": {
+      "station_name": "Joshimath",
+      "state": "Uttarakhand",
+      "river": "Ganga/Alaknanda",
+      "basin": "Ganga - Brahmaputra - Meghna",
+      "peak_flood_level_m": 85.74,
+      "danger_level_m": 1383.0,
+      "calculated_risk_score": 587.51,
+      "precipitation_mm": 21.67,
+      "rain_tier": "Light",
+      "reliability": "Safe"
+    }
+  },
+  {
+    "id": "hotspot-210",
+    "latitude": 26.2006,
+    "longitude": 92.9376,
+    "severity_level": "Red",
+    "state_name": "Assam",
+    "location_details": {
+      "station_name": "Assam-Brahmaputra Core Zone",
+      "state": "Assam",
+      "river": "Regional Tributary",
+      "basin": "River Basin",
+      "peak_flood_level_m": 15.0,
+      "danger_level_m": 10.0,
+      "calculated_risk_score": 10.32,
+      "precipitation_mm": 73.07,
+      "rain_tier": "Light",
+      "reliability": "Verified"
+    }
+  },
+  {
+    "id": "hotspot-211",
+    "latitude": 27.4728,
+    "longitude": 94.912,
+    "severity_level": "Red",
+    "state_name": "Assam",
+    "location_details": {
+      "station_name": "Dibrugarh Flood Basin",
+      "state": "Assam",
+      "river": "Regional Tributary",
+      "basin": "River Basin",
+      "peak_flood_level_m": 14.5,
+      "danger_level_m": 9.5,
+      "calculated_risk_score": 10.7,
+      "precipitation_mm": 201.08,
+      "rain_tier": "Moderate",
+      "reliability": "Verified"
+    }
+  },
+  {
+    "id": "hotspot-212",
+    "latitude": 26.1445,
+    "longitude": 91.7362,
+    "severity_level": "Red",
+    "state_name": "Assam",
+    "location_details": {
+      "station_name": "Guwahati-Kamrup Zone",
+      "state": "Assam",
+      "river": "Regional Tributary",
+      "basin": "River Basin",
+      "peak_flood_level_m": 13.8,
+      "danger_level_m": 9.0,
+      "calculated_risk_score": 10.5,
+      "precipitation_mm": 248.33,
+      "rain_tier": "Heavy",
+      "reliability": "Verified"
+    }
+  },
+  {
+    "id": "hotspot-213",
+    "latitude": 24.8333,
+    "longitude": 92.7789,
+    "severity_level": "Orange",
+    "state_name": "Assam",
+    "location_details": {
+      "station_name": "Silchar Barak Valley",
+      "state": "Assam",
+      "river": "Regional Tributary",
+      "basin": "River Basin",
+      "peak_flood_level_m": 12.0,
+      "danger_level_m": 8.5,
+      "calculated_risk_score": 9.5,
+      "precipitation_mm": 235.15,
+      "rain_tier": "Heavy",
+      "reliability": "Verified"
+    }
+  },
+  {
+    "id": "hotspot-214",
+    "latitude": 26.7509,
+    "longitude": 94.2037,
+    "severity_level": "Red",
+    "state_name": "Assam",
+    "location_details": {
+      "station_name": "Jorhat-Majuli Basin",
+      "state": "Assam",
+      "river": "Regional Tributary",
+      "basin": "River Basin",
+      "peak_flood_level_m": 13.2,
+      "danger_level_m": 9.0,
+      "calculated_risk_score": 9.33,
+      "precipitation_mm": 94.01,
+      "rain_tier": "Light",
+      "reliability": "Verified"
+    }
+  },
+  {
+    "id": "hotspot-215",
+    "latitude": 26.1226,
+    "longitude": 85.9065,
+    "severity_level": "Red",
+    "state_name": "Bihar",
+    "location_details": {
+      "station_name": "North Bihar Kosi Basin",
+      "state": "Bihar",
+      "river": "Regional Tributary",
+      "basin": "River Basin",
+      "peak_flood_level_m": 14.0,
+      "danger_level_m": 9.2,
+      "calculated_risk_score": 10.7,
+      "precipitation_mm": 255.02,
+      "rain_tier": "Heavy",
+      "reliability": "Verified"
+    }
+  },
+  {
+    "id": "hotspot-216",
+    "latitude": 26.1542,
+    "longitude": 85.8918,
+    "severity_level": "Orange",
+    "state_name": "Bihar",
+    "location_details": {
+      "station_name": "Darbhanga Flood Zone",
+      "state": "Bihar",
+      "river": "Regional Tributary",
+      "basin": "River Basin",
+      "peak_flood_level_m": 12.5,
+      "danger_level_m": 8.0,
+      "calculated_risk_score": 8.67,
+      "precipitation_mm": 98.29,
+      "rain_tier": "Light",
+      "reliability": "Verified"
+    }
+  }
+]

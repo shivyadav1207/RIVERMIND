@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.ipynb_checkpoints/
+*.xlsx
+*.csv
+*.zip
+Untitled.ipynb
