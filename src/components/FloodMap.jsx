@@ -22,31 +22,8 @@ const INDIA_BBOX = [
   [97.4, 35.7]  // Northeast coordinates [lng, lat]
 ];
 
-// Dark minimalist base map style (Free, robust CARTO Dark Matter or Mapbox fallback)
-const DEFAULT_DARK_STYLE = {
-  version: 8,
-  sources: {
-    'carto-dark': {
-      type: 'raster',
-      tiles: [
-        'https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}@2x.png',
-        'https://b.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}@2x.png',
-        'https://c.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}@2x.png'
-      ],
-      tileSize: 256,
-      attribution: '&copy; <a href="https://carto.com/">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a>'
-    }
-  },
-  layers: [
-    {
-      id: 'carto-dark-layer',
-      type: 'raster',
-      source: 'carto-dark',
-      minzoom: 0,
-      maxzoom: 20
-    }
-  ]
-};
+// Dark minimalist base map style (Free, robust OpenFreeMap Dark style - no API key required)
+const DEFAULT_DARK_STYLE = 'https://tiles.openfreemap.org/styles/dark';
 
 export default function FloodMap({
   statesGeoJson,
@@ -335,7 +312,7 @@ export default function FloodMap({
     onResetMap();
   }, [onResetMap]);
 
-  // Determine basemap style: Mapbox dark-v11 if token provided, otherwise default CARTO dark style
+  // Determine basemap style: Mapbox dark-v11 if token provided, otherwise default open dark style
   const mapStyle = mapboxToken
     ? 'mapbox://styles/mapbox/dark-v11'
     : DEFAULT_DARK_STYLE;
