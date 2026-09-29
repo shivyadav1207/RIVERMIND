@@ -133,9 +133,26 @@ export default function StationPopup({ details, onClose }) {
           Reliability: {details.reliability || 'Safe'}
         </span>
         <span className="font-mono text-slate-400">
-          {details.latitude?.toFixed(2)}°, {details.longitude?.toFixed(2)}°
+          {details.latitude ? Number(details.latitude).toFixed(2) : ''}°, {details.longitude ? Number(details.longitude).toFixed(2) : ''}°
         </span>
       </div>
+
+      {/* AI Prediction Studio Quick Launch Button */}
+      {details && (
+        <div className="mt-3 pt-2 border-t border-slate-800">
+          <button
+            onClick={() => {
+              if (onClose) onClose();
+              if (details.onRunPrediction) {
+                details.onRunPrediction(details);
+              }
+            }}
+            className="w-full py-2 px-3 rounded-xl bg-gradient-to-r from-blue-600 via-cyan-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold text-xs shadow-lg shadow-cyan-500/20 transition flex items-center justify-center gap-1.5"
+          >
+            <span>🔮 Run AI Hydro-Prediction Studio</span>
+          </button>
+        </div>
+      )}
     </div>
   );
 }

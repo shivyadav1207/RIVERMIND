@@ -34,6 +34,7 @@ export default function FloodMap({
   mapboxToken,
   selectedStation,
   onStationSelect,
+  onRunPrediction,
   stateStats
 }) {
   const mapRef = useRef(null);
@@ -367,7 +368,7 @@ export default function FloodMap({
             maxWidth="360px"
           >
             <StationPopup
-              details={activePopup.details}
+              details={{ ...activePopup.details, onRunPrediction }}
               onClose={() => setActivePopup(null)}
             />
           </Popup>

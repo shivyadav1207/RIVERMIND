@@ -12,7 +12,9 @@ import {
   Layers, 
   Info,
   TrendingUp,
-  Search
+  Search,
+  Brain,
+  Sparkles
 } from 'lucide-react';
 import { SEVERITY_COLORS } from '../utils/aggregation';
 
@@ -26,7 +28,8 @@ export default function Sidebar({
   stateStats,
   hotspots,
   nationalSummary,
-  selectedStation
+  selectedStation,
+  onOpenAIPredictor
 }) {
   const [filterTier, setFilterTier] = useState('ALL'); // 'ALL' | 'Red' | 'Orange' | 'Yellow'
   const [searchFilter, setSearchFilter] = useState('');
@@ -150,6 +153,27 @@ export default function Sidebar({
           </div>
         )}
       </div>
+
+      {/* AI Flood Prediction Studio Banner */}
+      {onOpenAIPredictor && (
+        <div className="p-3 bg-gradient-to-r from-blue-950/60 to-indigo-950/60 border-b border-slate-800">
+          <button
+            onClick={() => {
+              onClose();
+              onOpenAIPredictor();
+            }}
+            className="w-full p-2.5 rounded-xl bg-gradient-to-r from-blue-600 via-cyan-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold text-xs shadow-lg shadow-cyan-500/20 transition flex items-center justify-between gap-2"
+          >
+            <div className="flex items-center gap-2">
+              <Brain className="w-4 h-4 text-cyan-200" />
+              <span>AI Prediction Hub</span>
+            </div>
+            <span className="text-[10px] font-mono px-1.5 py-0.2 rounded bg-cyan-900/60 border border-cyan-400/40 text-cyan-200">
+              Launch Studio →
+            </span>
+          </button>
+        </div>
+      )}
 
       {/* Filter Tabs & Search */}
       <div className="p-3 border-b border-slate-800/80 space-y-2">

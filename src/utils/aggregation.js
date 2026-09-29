@@ -4,10 +4,15 @@
  */
 
 export const SEVERITY_COLORS = {
+  // Geospatial hotspot tier colors (legacy map mode)
   Red: '#ef4444',     // Crimson (High Danger)
   Orange: '#f97316',  // Amber (Moderate Danger)
   Yellow: '#eab308',  // Gold (Low Danger)
-  None: '#10b981'     // Emerald Green (Neutral / Safe / No flood alerts)
+  None: '#10b981',    // Emerald Green (Neutral / Safe / No flood alerts)
+  // AI prediction severity tier colors
+  Critical: '#ef4444',  // Critical flood risk
+  Moderate: '#f97316',  // Moderate flood watch
+  Low: '#eab308'        // Low / Normal riverine flow
 };
 
 export const SEVERITY_WEIGHTS = {
