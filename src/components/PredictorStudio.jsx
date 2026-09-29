@@ -126,8 +126,8 @@ export default function PredictorStudio({ defaultStation = null }) {
       {/* Top Studio Controls: Station Picker & Model Selector */}
       <div className="rounded-3xl bg-slate-900/80 border border-slate-800 p-6 shadow-2xl backdrop-blur-xl">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-          {/* Left: Station & Basin Picker */}
-          <div className="lg:col-span-5 space-y-3">
+          {/* Station & Basin Picker */}
+          <div className="lg:col-span-12 space-y-3">
             <div className="flex items-center justify-between">
               <label className="text-xs font-bold text-slate-300 uppercase tracking-wider flex items-center gap-1.5">
                 <MapPin className="w-3.5 h-3.5 text-cyan-400" />
@@ -208,48 +208,7 @@ export default function PredictorStudio({ defaultStation = null }) {
             )}
           </div>
 
-          {/* Right: AI Model Architecture Selector */}
-          <div className="lg:col-span-7 space-y-3">
-            <div className="flex items-center justify-between">
-              <label className="text-xs font-bold text-slate-300 uppercase tracking-wider flex items-center gap-1.5">
-                <Brain className="w-3.5 h-3.5 text-cyan-400" />
-                Select AI / ML Prediction Architecture
-              </label>
-              <span className="text-[10px] text-cyan-400 font-semibold">
-                Instant Real-Time Mathematical Inference
-              </span>
-            </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-              {AVAILABLE_MODELS.map((m) => {
-                const isSelected = m.id === selectedModelId;
-                return (
-                  <div
-                    key={m.id}
-                    onClick={() => setSelectedModelId(m.id)}
-                    className={`p-3 rounded-2xl border cursor-pointer transition-all ${
-                      isSelected
-                        ? 'bg-gradient-to-r from-blue-950/90 to-cyan-950/70 border-cyan-400 shadow-md shadow-cyan-500/10'
-                        : 'bg-slate-950/60 border-slate-800/80 hover:bg-slate-800/60'
-                    }`}
-                  >
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-2">
-                        <span className={`w-2 h-2 rounded-full ${isSelected ? 'bg-cyan-400' : 'bg-slate-600'}`} />
-                        <span className="font-bold text-xs text-white">{m.name}</span>
-                      </div>
-                      <span className="text-[10px] font-bold font-mono text-cyan-300">
-                        {m.accuracy}
-                      </span>
-                    </div>
-                    <p className="text-[10px] text-slate-400 mt-1 line-clamp-1">
-                      {m.description}
-                    </p>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
         </div>
       </div>
 

@@ -4562,19 +4562,6 @@
   },
   "scenario_presets": [
     {
-      "id": "assam_brahmaputra_deluge",
-      "name": "Assam Brahmaputra Basin Surge",
-      "description": "Torrential monsoon surge across Assam valleys inundating active floodplains",
-      "icon": "CloudLightning",
-      "rain_1d": 110,
-      "rain_2d": 180,
-      "rain_3d": 245,
-      "rain_5d": 310,
-      "rain_7d": 380,
-      "rain_10d": 450,
-      "soil_moisture": 96
-    },
-    {
       "id": "monsoon_cloudburst",
       "name": "Monsoon Cloudburst / Extreme Rain",
       "description": "Severe atmospheric depression causing >180mm rainfall in 48 hours",
@@ -4586,19 +4573,6 @@
       "rain_7d": 330,
       "rain_10d": 380,
       "soil_moisture": 92
-    },
-    {
-      "id": "cyclonic_surge",
-      "name": "Severe Tropical Cyclone",
-      "description": "High-velocity cyclonic coastal surge with prolonged torrential downpour",
-      "icon": "Wind",
-      "rain_1d": 120,
-      "rain_2d": 195,
-      "rain_3d": 260,
-      "rain_5d": 340,
-      "rain_7d": 410,
-      "rain_10d": 490,
-      "soil_moisture": 98
     },
     {
       "id": "heavy_monsoon",
