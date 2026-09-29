@@ -11,7 +11,8 @@ import {
   Brain,
   SlidersHorizontal,
   ChevronRight,
-  TrendingUp
+  TrendingUp,
+  Waves
 } from 'lucide-react';
 import PredictorStudio from './PredictorStudio';
 import ModelBenchmarks from './ModelBenchmarks';
@@ -63,23 +64,26 @@ export default function AIFloodPredictor({ onSwitchToMapMode }) {
       {/* Primary Sub-Tabs Navigation */}
       <div className="flex items-center gap-2 border-b border-slate-800 pb-3 overflow-x-auto">
         {[
-          { id: 'studio', label: '🔮 Interactive Prediction Studio', description: 'Simulate river stages and hydrographs' },
-          { id: 'benchmarks', label: '📊 Model Benchmarks & Diagnostics', description: 'Cross-validation accuracy & R² metrics' },
-          { id: 'scenarios', label: '🧪 What-If Stress Testing Lab', description: 'Batch national storm simulation' }
+          { id: 'studio', label: 'RiverMind Predictor', description: 'Simulate river stages and hydrographs' },
+          { id: 'benchmarks', label: 'RiverMind Diagnostics', description: 'Cross-validation accuracy & R² metrics' },
+          { id: 'scenarios', label: 'RiverMind Scenario Tester', description: 'Batch national storm simulation' }
         ].map((tab) => {
           const isActive = activeSubTab === tab.id;
           return (
             <button
               key={tab.id}
               onClick={() => setActiveSubTab(tab.id)}
-              className={`px-4 py-2.5 rounded-2xl text-xs font-bold transition-all duration-200 border text-left shrink-0 ${
+              className={`px-4 py-2.5 rounded-2xl text-xs font-bold transition-all duration-200 border text-left shrink-0 flex flex-col ${
                 isActive
                   ? 'bg-gradient-to-r from-blue-600 via-cyan-600 to-indigo-600 text-white border-cyan-400/50 shadow-xl shadow-cyan-500/20 scale-[1.01]'
                   : 'bg-slate-900/60 text-slate-400 hover:text-slate-200 hover:bg-slate-800/80 border-slate-800'
               }`}
             >
-              <div className="font-extrabold">{tab.label}</div>
-              <div className={`text-[10px] mt-0.5 ${isActive ? 'text-cyan-100' : 'text-slate-500'}`}>
+              <div className="flex items-center gap-1.5 font-extrabold">
+                <Waves className="w-4 h-4 text-cyan-300" />
+                {tab.label}
+              </div>
+              <div className={`text-[10px] mt-0.5 ml-5 ${isActive ? 'text-cyan-100' : 'text-slate-500'}`}>
                 {tab.description}
               </div>
             </button>
