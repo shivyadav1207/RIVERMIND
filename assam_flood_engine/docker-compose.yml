@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    depends_on:
+      - redis
+      - db
+  redis:
+    image: "redis:alpine"
+  db:
+    image: "postgres:13"
+    environment:
+      POSTGRES_USER: assam
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: assam_floods
