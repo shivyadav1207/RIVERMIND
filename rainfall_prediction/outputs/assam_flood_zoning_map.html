@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8baab95c8c44c79269d4f36d9f99d809 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+<div style="
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    background-color: white;
+    padding: 10px 18px;
+    border: 2px solid #333;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+">
+RiverMind Assam Flood Zoning Dashboard
+</div>
+    
+<div style="
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999;
+    background-color: white;
+    border: 2px solid #555;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 14px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+">
+    <b>Flood Zones</b><br>
+
+    <div style="margin-top: 7px;">
+        <span style="
+            display:inline-block;
+            width:18px;
+            height:18px;
+            background:#A7D8FF;
+            margin-right:6px;
+            vertical-align:middle;
+        "></span>
+        Safe: 0–35
+    </div>
+
+    <div style="margin-top: 7px;">
+        <span style="
+            display:inline-block;
+            width:18px;
+            height:18px;
+            background:#CDB4DB;
+            margin-right:6px;
+            vertical-align:middle;
+        "></span>
+        Medium Risk: 36–65
+    </div>
+
+    <div style="margin-top: 7px;">
+        <span style="
+            display:inline-block;
+            width:18px;
+            height:18px;
+            background:#D63384;
+            margin-right:6px;
+            vertical-align:middle;
+        "></span>
+        High Risk: 66–100
+    </div>
+</div>
+    
+            <div class="folium-map" id="map_8baab95c8c44c79269d4f36d9f99d809" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8baab95c8c44c79269d4f36d9f99d809 = L.map(
+                "map_8baab95c8c44c79269d4f36d9f99d809",
+                {
+                    center: [26.2, 92.9],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_8baab95c8c44c79269d4f36d9f99d809);
+
+            
+
+        
+    
+            var tile_layer_6cb6982790fcb17a96685367b6ce6825 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 16,
+  "maxNativeZoom": 16,
+  "noWrap": false,
+  "attribution": "Tiles \u0026copy; Esri \u0026mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6cb6982790fcb17a96685367b6ce6825.addTo(map_8baab95c8c44c79269d4f36d9f99d809);
+        
+    
+            var circle_marker_cc52b5f86a0237c3587dc2752ad78588 = L.circleMarker(
+                [26.4994, 91.1793],
+                {"bubblingMouseEvents": true, "color": "#CDB4DB", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#CDB4DB", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_8baab95c8c44c79269d4f36d9f99d809);
+        
+    
+        var popup_d65e9a1d99d9968c09b72be6ff770dc4 = L.popup({
+  "maxWidth": 330,
+});
+
+        
+            
+                var html_8205c114607c7ecd2cc1042d19cc179e = $(`<div id="html_8205c114607c7ecd2cc1042d19cc179e" style="width: 100.0%; height: 100.0%;">     <div style="width: 270px;">         <h4 style="margin-bottom: 8px;">             Bajali         </h4>         <b>Today's Rainfall:</b> 1.20 mm<br>         <b>3-Day Rainfall:</b> 1.20 mm<br>         <b>Elevation:</b> 43 m<br>         <b>Closest River:</b> Pagladia River<br>         <b>Distance from River:</b> 5 km<br>         <b>Flood Risk Score:</b> 55.11/100<br>         <b>Flood Zone:</b> Medium Risk     </div>     </div>`)[0];
+                popup_d65e9a1d99d9968c09b72be6ff770dc4.setContent(html_8205c114607c7ecd2cc1042d19cc179e);
+            
+        
+
+        circle_marker_cc52b5f86a0237c3587dc2752ad78588.bindPopup(popup_d65e9a1d99d9968c09b72be6ff770dc4)
+        ;
+
+        
+    
+    
+            circle_marker_cc52b5f86a0237c3587dc2752ad78588.bindTooltip(
+                `<div>
+                     Bajali - Medium Risk
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_25e5a21846510e92a3fc81504473771b = L.circleMarker(
+                [26.662, 91.3411],
+                {"bubblingMouseEvents": true, "color": "#CDB4DB", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#CDB4DB", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_8baab95c8c44c79269d4f36d9f99d809);
+        
+    
+        var popup_900c2efd87ecee6b1f6d13bae081d94e = L.popup({
+  "maxWidth": 330,
+});
+
+        
+            
+                var html_991d7120d937d3dc2d92f906fae79d17 = $(`<div id="html_991d7120d937d3dc2d92f906fae79d17" style="width: 100.0%; height: 100.0%;">     <div style="width: 270px;">         <h4 style="margin-bottom: 8px;">             Baksa         </h4>         <b>Today's Rainfall:</b> 0.50 mm<br>         <b>3-Day Rainfall:</b> 0.50 mm<br>         <b>Elevation:</b> 52 m<br>         <b>Closest River:</b> Manas River<br>         <b>Distance from River:</b> 8 km<br>         <b>Flood Risk Score:</b> 42.86/100<br>         <b>Flood Zone:</b> Medium Risk     </div>     </div>`)[0];
+                popup_900c2efd87ecee6b1f6d13bae081d94e.setContent(html_991d7120d937d3dc2d92f906fae79d17);
+            
+        
+
+        circle_marker_25e5a21846510e92a3fc81504473771b.bindPopup(popup_900c2efd87ecee6b1f6d13bae081d94e)
+        ;
+
+        
+    
+    
+            circle_marker_25e5a21846510e92a3fc81504473771b.bindTooltip(
+                `<div>
+                     Baksa - Medium Risk
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9e9a493c1371361859fc643cf358642c = L.circleMarker(
+                [26.32, 91.0],
+                {"bubblingMouseEvents": true, "color": "#CDB4DB", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#CDB4DB", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_8baab95c8c44c79269d4f36d9f99d809);
+        
+    
+        var popup_7d4c142036a4ddfbdd3e3ef15ea3ab34 = L.popup({
+  "maxWidth": 330,
+});
+
+        
+            
+                var html_7f5198e8bd9557f31ef2865647ff5099 = $(`<div id="html_7f5198e8bd9557f31ef2865647ff5099" style="width: 100.0%; height: 100.0%;">     <div style="width: 270px;">         <h4 style="margin-bottom: 8px;">             Barpeta         </h4>         <b>Today's Rainfall:</b> 0.90 mm<br>         <b>3-Day Rainfall:</b> 0.90 mm<br>         <b>Elevation:</b> 35 m<br>         <b>Closest River:</b> Brahmaputra River<br>         <b>Distance from River:</b> 12 km<br>         <b>Flood Risk Score:</b> 46.65/100<br>         <b>Flood Zone:</b> Medium Risk     </div>     </div>`)[0];
+                popup_7d4c142036a4ddfbdd3e3ef15ea3ab34.setContent(html_7f5198e8bd9557f31ef2865647ff5099);
+            
+        
+
+        circle_marker_9e9a493c1371361859fc643cf358642c.bindPopup(popup_7d4c142036a4ddfbdd3e3ef15ea3ab34)
+        ;
+
+        
+    
+    
+            circle_marker_9e9a493c1371361859fc643cf358642c.bindTooltip(
+                `<div>
+                     Barpeta - Medium Risk
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e55f3f66abffe34c4f276e4df9f1fd58 = L.circleMarker(
+                [26.7258, 93.1466],
+                {"bubblingMouseEvents": true, "color": "#CDB4DB", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#CDB4DB", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_8baab95c8c44c79269d4f36d9f99d809);
+        
+    
+        var popup_7cee31d57837b0d31e2c6b83398b2664 = L.popup({
+  "maxWidth": 330,
+});
+
+        
+            
+                var html_312cbd66ad124f56b5d11a462accf7b8 = $(`<div id="html_312cbd66ad124f56b5d11a462accf7b8" style="width: 100.0%; height: 100.0%;">     <div style="width: 270px;">         <h4 style="margin-bottom: 8px;">             Biswanath         </h4>         <b>Today's Rainfall:</b> 0.50 mm<br>         <b>3-Day Rainfall:</b> 0.50 mm<br>         <b>Elevation:</b> 69 m<br>         <b>Closest River:</b> Brahmaputra River<br>         <b>Distance from River:</b> 15 km<br>         <b>Flood Risk Score:</b> 38.26/100<br>         <b>Flood Zone:</b> Medium Risk     </div>     </div>`)[0];
+                popup_7cee31d57837b0d31e2c6b83398b2664.setContent(html_312cbd66ad124f56b5d11a462accf7b8);
+            
+        
+
+        circle_marker_e55f3f66abffe34c4f276e4df9f1fd58.bindPopup(popup_7cee31d57837b0d31e2c6b83398b2664)
+        ;
+
+        
+    
+    
+            circle_marker_e55f3f66abffe34c4f276e4df9f1fd58.bindTooltip(
+                `<div>
+                     Biswanath - Medium Risk
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_260209da540704b55eb2662f614c05b6 = L.circleMarker(
+                [26.4769, 90.5583],
+                {"bubblingMouseEvents": true, "color": "#CDB4DB", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#CDB4DB", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_8baab95c8c44c79269d4f36d9f99d809);
+        
+    
+        var popup_f0fe46e8f226856275aee688f18d1ad0 = L.popup({
+  "maxWidth": 330,
+});
+
+        
+            
+                var html_f0ebf1a7bd569d8d2418cafc7df1eea5 = $(`<div id="html_f0ebf1a7bd569d8d2418cafc7df1eea5" style="width: 100.0%; height: 100.0%;">     <div style="width: 270px;">         <h4 style="margin-bottom: 8px;">             Bongaigaon         </h4>         <b>Today's Rainfall:</b> 0.20 mm<br>         <b>3-Day Rainfall:</b> 0.20 mm<br>         <b>Elevation:</b> 63 m<br>         <b>Closest River:</b> Brahmaputra River<br>         <b>Distance from River:</b> 10 km<br>         <b>Flood Risk Score:</b> 37.03/100<br>         <b>Flood Zone:</b> Medium Risk     </div>     </div>`)[0];
+                popup_f0fe46e8f226856275aee688f18d1ad0.setContent(html_f0ebf1a7bd569d8d2418cafc7df1eea5);
+            
+        
+
+        circle_marker_260209da540704b55eb2662f614c05b6.bindPopup(popup_f0fe46e8f226856275aee688f18d1ad0)
+        ;
+
+        
+    
+    
+            circle_marker_260209da540704b55eb2662f614c05b6.bindTooltip(
+                `<div>
+                     Bongaigaon - Medium Risk
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d4f9cabc46cf30eb45215ce56f5db5d5 = L.circleMarker(
+                [24.8333, 92.7789],
+                {"bubblingMouseEvents": true, "color": "#CDB4DB", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#CDB4DB", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_8baab95c8c44c79269d4f36d9f99d809);
+        
+    
+        var popup_d79bedba90163f00e1d633ca39e9645e = L.popup({
+  "maxWidth": 330,
+});
+
+        
+            
+                var html_958ec65de5059c1ad085870db3eb9b1f = $(`<div id="html_958ec65de5059c1ad085870db3eb9b1f" style="width: 100.0%; height: 100.0%;">     <div style="width: 270px;">         <h4 style="margin-bottom: 8px;">             Cachar         </h4>         <b>Today's Rainfall:</b> 0.30 mm<br>         <b>3-Day Rainfall:</b> 0.30 mm<br>         <b>Elevation:</b> 24 m<br>         <b>Closest River:</b> Barak River<br>         <b>Distance from River:</b> 3 km<br>         <b>Flood Risk Score:</b> 43.55/100<br>         <b>Flood Zone:</b> Medium Risk     </div>     </div>`)[0];
+                popup_d79bedba90163f00e1d633ca39e9645e.setContent(html_958ec65de5059c1ad085870db3eb9b1f);
+            
+        
+
+        circle_marker_d4f9cabc46cf30eb45215ce56f5db5d5.bindPopup(popup_d79bedba90163f00e1d633ca39e9645e)
+        ;
+
+        
+    
+    
+            circle_marker_d4f9cabc46cf30eb45215ce56f5db5d5.bindTooltip(
+                `<div>
+                     Cachar - Medium Risk
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f95f4b0aa86253d8f792e552abc01b50 = L.circleMarker(
+                [27.028, 95.0312],
+                {"bubblingMouseEvents": true, "color": "#D63384", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D63384", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_8baab95c8c44c79269d4f36d9f99d809);
+        
+    
+        var popup_82751b11c2ce1970a3b2a31d6b7be1c3 = L.popup({
+  "maxWidth": 330,
+});
+
+        
+            
+                var html_ae4869433cf6ccc959a7e5bd7686379c = $(`<div id="html_ae4869433cf6ccc959a7e5bd7686379c" style="width: 100.0%; height: 100.0%;">     <div style="width: 270px;">         <h4 style="margin-bottom: 8px;">             Charaideo         </h4>         <b>Today's Rainfall:</b> 4.10 mm<br>         <b>3-Day Rainfall:</b> 4.10 mm<br>         <b>Elevation:</b> 90 m<br>         <b>Closest River:</b> Brahmaputra River<br>         <b>Distance from River:</b> 8 km<br>         <b>Flood Risk Score:</b> 94.75/100<br>         <b>Flood Zone:</b> High Risk     </div>     </div>`)[0];
+                popup_82751b11c2ce1970a3b2a31d6b7be1c3.setContent(html_ae4869433cf6ccc959a7e5bd7686379c);
+            
+        
+
+        circle_marker_f95f4b0aa86253d8f792e552abc01b50.bindPopup(popup_82751b11c2ce1970a3b2a31d6b7be1c3)
+        ;
+
+        
+    
+    
+            circle_marker_f95f4b0aa86253d8f792e552abc01b50.bindTooltip(
+                `<div>
+                     Charaideo - High Risk
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8ec4afaf652e2e4c24a0182f27d51220 = L.circleMarker(
+                [26.4742, 90.5644],
+                {"bubblingMouseEvents": true, "color": "#CDB4DB", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#CDB4DB", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_8baab95c8c44c79269d4f36d9f99d809);
+        
+    
+        var popup_b0c9f5f2dba301184a223c3770e73afd = L.popup({
+  "maxWidth": 330,
+});
+
+        
+            
+                var html_daae7f78cb89edeedde4343c0bc95048 = $(`<div id="html_daae7f78cb89edeedde4343c0bc95048" style="width: 100.0%; height: 100.0%;">     <div style="width: 270px;">         <h4 style="margin-bottom: 8px;">             Chirang         </h4>         <b>Today's Rainfall:</b> 0.20 mm<br>         <b>3-Day Rainfall:</b> 0.20 mm<br>         <b>Elevation:</b> 50 m<br>         <b>Closest River:</b> Sankosh River<br>         <b>Distance from River:</b> 12 km<br>         <b>Flood Risk Score:</b> 36.09/100<br>         <b>Flood Zone:</b> Medium Risk     </div>     </div>`)[0];
+                popup_b0c9f5f2dba301184a223c3770e73afd.setContent(html_daae7f78cb89edeedde4343c0bc95048);
+            
+        
+
+        circle_marker_8ec4afaf652e2e4c24a0182f27d51220.bindPopup(popup_b0c9f5f2dba301184a223c3770e73afd)
+        ;
+
+        
+    
+    
+            circle_marker_8ec4afaf652e2e4c24a0182f27d51220.bindTooltip(
+                `<div>
+                     Chirang - Medium Risk
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0c63523951733721cbcbbe37c9550863 = L.circleMarker(
+                [26.4463, 92.0322],
+                {"bubblingMouseEvents": true, "color": "#A7D8FF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#A7D8FF", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_8baab95c8c44c79269d4f36d9f99d809);
+        
+    
+        var popup_579004ea8f7ed43dfa86cc00b8c12006 = L.popup({
+  "maxWidth": 330,
+});
+
+        
+            
+                var html_8ae576302b357a844d8e10d0c25c1329 = $(`<div id="html_8ae576302b357a844d8e10d0c25c1329" style="width: 100.0%; height: 100.0%;">     <div style="width: 270px;">         <h4 style="margin-bottom: 8px;">             Darrang         </h4>         <b>Today's Rainfall:</b> 0.00 mm<br>         <b>3-Day Rainfall:</b> 0.00 mm<br>         <b>Elevation:</b> 60 m<br>         <b>Closest River:</b> Brahmaputra River<br>         <b>Distance from River:</b> 18 km<br>         <b>Flood Risk Score:</b> 29.32/100<br>         <b>Flood Zone:</b> Safe     </div>     </div>`)[0];
+                popup_579004ea8f7ed43dfa86cc00b8c12006.setContent(html_8ae576302b357a844d8e10d0c25c1329);
+            
+        
+
+        circle_marker_0c63523951733721cbcbbe37c9550863.bindPopup(popup_579004ea8f7ed43dfa86cc00b8c12006)
+        ;
+
+        
+    
+    
+            circle_marker_0c63523951733721cbcbbe37c9550863.bindTooltip(
+                `<div>
+                     Darrang - Safe
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a9c0a7770803a3b60b5f6021713a9f54 = L.circleMarker(
+                [27.48, 94.58],
+                {"bubblingMouseEvents": true, "color": "#CDB4DB", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#CDB4DB", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_8baab95c8c44c79269d4f36d9f99d809);
+        
+    
+        var popup_42764a9a591aced90d970bb50b900310 = L.popup({
+  "maxWidth": 330,
+});
+
+        
+            
+                var html_9be2a755c0303cc014df11cad7947552 = $(`<div id="html_9be2a755c0303cc014df11cad7947552" style="width: 100.0%; height: 100.0%;">     <div style="width: 270px;">         <h4 style="margin-bottom: 8px;">             Dhemaji         </h4>         <b>Today's Rainfall:</b> 0.00 mm<br>         <b>3-Day Rainfall:</b> 0.00 mm<br>         <b>Elevation:</b> 91 m<br>         <b>Closest River:</b> Brahmaputra River<br>         <b>Distance from River:</b> 5 km<br>         <b>Flood Risk Score:</b> 36.54/100<br>         <b>Flood Zone:</b> Medium Risk     </div>     </div>`)[0];
+                popup_42764a9a591aced90d970bb50b900310.setContent(html_9be2a755c0303cc014df11cad7947552);
+            
+        
+
+        circle_marker_a9c0a7770803a3b60b5f6021713a9f54.bindPopup(popup_42764a9a591aced90d970bb50b900310)
+        ;
+
+        
+    
+    
+            circle_marker_a9c0a7770803a3b60b5f6021713a9f54.bindTooltip(
+                `<div>
+                     Dhemaji - Medium Risk
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_55a24ea4483d948331644f517dfab8ab = L.circleMarker(
+                [26.48, 89.98],
+                {"bubblingMouseEvents": true, "color": "#CDB4DB", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#CDB4DB", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_8baab95c8c44c79269d4f36d9f99d809);
+        
+    
+        var popup_85129ec8430984e4f25a31f5dab6e939 = L.popup({
+  "maxWidth": 330,
+});
+
+        
+            
+                var html_026ffb02a1749191a25e2401f0e03284 = $(`<div id="html_026ffb02a1749191a25e2401f0e03284" style="width: 100.0%; height: 100.0%;">     <div style="width: 270px;">         <h4 style="margin-bottom: 8px;">             Dhubri         </h4>         <b>Today's Rainfall:</b> 0.00 mm<br>         <b>3-Day Rainfall:</b> 0.00 mm<br>         <b>Elevation:</b> 28 m<br>         <b>Closest River:</b> Brahmaputra River<br>         <b>Distance from River:</b> 8 km<br>         <b>Flood Risk Score:</b> 36.05/100<br>         <b>Flood Zone:</b> Medium Risk     </div>     </div>`)[0];
+                popup_85129ec8430984e4f25a31f5dab6e939.setContent(html_026ffb02a1749191a25e2401f0e03284);
+            
+        
+
+        circle_marker_55a24ea4483d948331644f517dfab8ab.bindPopup(popup_85129ec8430984e4f25a31f5dab6e939)
+        ;
+
+        
+    
+    
+            circle_marker_55a24ea4483d948331644f517dfab8ab.bindTooltip(
+                `<div>
+                     Dhubri - Medium Risk
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6ac73a2bea38937016844dc0f131bd4c = L.circleMarker(
+                [27.48, 95.0],
+                {"bubblingMouseEvents": true, "color": "#CDB4DB", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#CDB4DB", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_8baab95c8c44c79269d4f36d9f99d809);
+        
+    
+        var popup_accf5bb97f6930170ab4bd122e70f91e = L.popup({
+  "maxWidth": 330,
+});
+
+        
+            
+                var html_b4bda8d56ebd136f16b0ea63df938951 = $(`<div id="html_b4bda8d56ebd136f16b0ea63df938951" style="width: 100.0%; height: 100.0%;">     <div style="width: 270px;">         <h4 style="margin-bottom: 8px;">             Dibrugarh         </h4>         <b>Today's Rainfall:</b> 1.00 mm<br>         <b>3-Day Rainfall:</b> 1.00 mm<br>         <b>Elevation:</b> 109 m<br>         <b>Closest River:</b> Brahmaputra River<br>         <b>Distance from River:</b> 12 km<br>         <b>Flood Risk Score:</b> 46.56/100<br>         <b>Flood Zone:</b> Medium Risk     </div>     </div>`)[0];
+                popup_accf5bb97f6930170ab4bd122e70f91e.setContent(html_b4bda8d56ebd136f16b0ea63df938951);
+            
+        
+
+        circle_marker_6ac73a2bea38937016844dc0f131bd4c.bindPopup(popup_accf5bb97f6930170ab4bd122e70f91e)
+        ;
+
+        
+    
+    
+            circle_marker_6ac73a2bea38937016844dc0f131bd4c.bindTooltip(
+                `<div>
+                     Dibrugarh - Medium Risk
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a2dd10079c26e0b710b39471735ca795 = L.circleMarker(
+                [25.169, 93.016],
+                {"bubblingMouseEvents": true, "color": "#A7D8FF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#A7D8FF", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_8baab95c8c44c79269d4f36d9f99d809);
+        
+    
+        var popup_5da1db9f0e00ca8d5f84efe1e1cfc6b0 = L.popup({
+  "maxWidth": 330,
+});
+
+        
+            
+                var html_55f50e8af1608fab4cbeb82951facb55 = $(`<div id="html_55f50e8af1608fab4cbeb82951facb55" style="width: 100.0%; height: 100.0%;">     <div style="width: 270px;">         <h4 style="margin-bottom: 8px;">             Dima Hasao         </h4>         <b>Today's Rainfall:</b> 0.10 mm<br>         <b>3-Day Rainfall:</b> 0.10 mm<br>         <b>Elevation:</b> 966 m<br>         <b>Closest River:</b> Barak River<br>         <b>Distance from River:</b> 35 km<br>         <b>Flood Risk Score:</b> 1.46/100<br>         <b>Flood Zone:</b> Safe     </div>     </div>`)[0];
+                popup_5da1db9f0e00ca8d5f84efe1e1cfc6b0.setContent(html_55f50e8af1608fab4cbeb82951facb55);
+            
+        
+
+        circle_marker_a2dd10079c26e0b710b39471735ca795.bindPopup(popup_5da1db9f0e00ca8d5f84efe1e1cfc6b0)
+        ;
+
+        
+    
+    
+            circle_marker_a2dd10079c26e0b710b39471735ca795.bindTooltip(
+                `<div>
+                     Dima Hasao - Safe
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aac848a2be06f044de7c6fd377c4edda = L.circleMarker(
+                [26.17, 90.62],
+                {"bubblingMouseEvents": true, "color": "#A7D8FF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#A7D8FF", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_8baab95c8c44c79269d4f36d9f99d809);
+        
+    
+        var popup_b9a1390303006ee936d2e16b9f0abe6a = L.popup({
+  "maxWidth": 330,
+});
+
+        
+            
+                var html_e028ba3e051224eae09e7e534f5a59df = $(`<div id="html_e028ba3e051224eae09e7e534f5a59df" style="width: 100.0%; height: 100.0%;">     <div style="width: 270px;">         <h4 style="margin-bottom: 8px;">             Goalpara         </h4>         <b>Today's Rainfall:</b> 0.00 mm<br>         <b>3-Day Rainfall:</b> 0.00 mm<br>         <b>Elevation:</b> 35 m<br>         <b>Closest River:</b> Brahmaputra River<br>         <b>Distance from River:</b> 15 km<br>         <b>Flood Risk Score:</b> 31.66/100<br>         <b>Flood Zone:</b> Safe     </div>     </div>`)[0];
+                popup_b9a1390303006ee936d2e16b9f0abe6a.setContent(html_e028ba3e051224eae09e7e534f5a59df);
+            
+        
+
+        circle_marker_aac848a2be06f044de7c6fd377c4edda.bindPopup(popup_b9a1390303006ee936d2e16b9f0abe6a)
+        ;
+
+        
+    
+    
+            circle_marker_aac848a2be06f044de7c6fd377c4edda.bindTooltip(
+                `<div>
+                     Goalpara - Safe
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3c7462b9a860fa759c0c67a5a0f55beb = L.circleMarker(
+                [26.52, 93.97],
+                {"bubblingMouseEvents": true, "color": "#D63384", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D63384", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_8baab95c8c44c79269d4f36d9f99d809);
+        
+    
+        var popup_8ce504e1f724d8b092dc97bc125a3602 = L.popup({
+  "maxWidth": 330,
+});
+
+        
+            
+                var html_e4f51c96f955a48ac6ae8069f21a7f26 = $(`<div id="html_e4f51c96f955a48ac6ae8069f21a7f26" style="width: 100.0%; height: 100.0%;">     <div style="width: 270px;">         <h4 style="margin-bottom: 8px;">             Golaghat         </h4>         <b>Today's Rainfall:</b> 2.90 mm<br>         <b>3-Day Rainfall:</b> 2.90 mm<br>         <b>Elevation:</b> 95 m<br>         <b>Closest River:</b> Dhansiri River<br>         <b>Distance from River:</b> 25 km<br>         <b>Flood Risk Score:</b> 66.78/100<br>         <b>Flood Zone:</b> High Risk     </div>     </div>`)[0];
+                popup_8ce504e1f724d8b092dc97bc125a3602.setContent(html_e4f51c96f955a48ac6ae8069f21a7f26);
+            
+        
+
+        circle_marker_3c7462b9a860fa759c0c67a5a0f55beb.bindPopup(popup_8ce504e1f724d8b092dc97bc125a3602)
+        ;
+
+        
+    
+    
+            circle_marker_3c7462b9a860fa759c0c67a5a0f55beb.bindTooltip(
+                `<div>
+                     Golaghat - High Risk
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_71d2db812e3ad0910695978b81e7753f = L.circleMarker(
+                [24.68, 92.57],
+                {"bubblingMouseEvents": true, "color": "#CDB4DB", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#CDB4DB", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_8baab95c8c44c79269d4f36d9f99d809);
+        
+    
+        var popup_c89f01ac0dabeba9e1802847369e86ce = L.popup({
+  "maxWidth": 330,
+});
+
+        
+            
+                var html_64778fd7f27ea413450bac60f671583e = $(`<div id="html_64778fd7f27ea413450bac60f671583e" style="width: 100.0%; height: 100.0%;">     <div style="width: 270px;">         <h4 style="margin-bottom: 8px;">             Hailakandi         </h4>         <b>Today's Rainfall:</b> 0.30 mm<br>         <b>3-Day Rainfall:</b> 0.30 mm<br>         <b>Elevation:</b> 21 m<br>         <b>Closest River:</b> Barak River<br>         <b>Distance from River:</b> 5 km<br>         <b>Flood Risk Score:</b> 42.40/100<br>         <b>Flood Zone:</b> Medium Risk     </div>     </div>`)[0];
+                popup_c89f01ac0dabeba9e1802847369e86ce.setContent(html_64778fd7f27ea413450bac60f671583e);
+            
+        
+
+        circle_marker_71d2db812e3ad0910695978b81e7753f.bindPopup(popup_c89f01ac0dabeba9e1802847369e86ce)
+        ;
+
+        
+    
+    
+            circle_marker_71d2db812e3ad0910695978b81e7753f.bindTooltip(
+                `<div>
+                     Hailakandi - Medium Risk
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d5b627adadfe7a5b061aef719e89b6ab = L.circleMarker(
+                [26.0, 92.87],
+                {"bubblingMouseEvents": true, "color": "#A7D8FF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#A7D8FF", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_8baab95c8c44c79269d4f36d9f99d809);
+        
+    
+        var popup_a27ec0085ea492582b9bac70a6384ed7 = L.popup({
+  "maxWidth": 330,
+});
+
+        
+            
+                var html_d58e665f0567dd3cfbd67a281609032c = $(`<div id="html_d58e665f0567dd3cfbd67a281609032c" style="width: 100.0%; height: 100.0%;">     <div style="width: 270px;">         <h4 style="margin-bottom: 8px;">             Hojai         </h4>         <b>Today's Rainfall:</b> 0.00 mm<br>         <b>3-Day Rainfall:</b> 0.00 mm<br>         <b>Elevation:</b> 59 m<br>         <b>Closest River:</b> Kopili River<br>         <b>Distance from River:</b> 20 km<br>         <b>Flood Risk Score:</b> 28.13/100<br>         <b>Flood Zone:</b> Safe     </div>     </div>`)[0];
+                popup_a27ec0085ea492582b9bac70a6384ed7.setContent(html_d58e665f0567dd3cfbd67a281609032c);
+            
+        
+
+        circle_marker_d5b627adadfe7a5b061aef719e89b6ab.bindPopup(popup_a27ec0085ea492582b9bac70a6384ed7)
+        ;
+
+        
+    
+    
+            circle_marker_d5b627adadfe7a5b061aef719e89b6ab.bindTooltip(
+                `<div>
+                     Hojai - Safe
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_81b54afc4b9237a849a3617e66de0cec = L.circleMarker(
+                [26.75, 94.22],
+                {"bubblingMouseEvents": true, "color": "#A7D8FF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#A7D8FF", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_8baab95c8c44c79269d4f36d9f99d809);
+        
+    
+        var popup_9f065d20def1ca557d2d26bc1fbdcdec = L.popup({
+  "maxWidth": 330,
+});
+
+        
+            
+                var html_06ed1030fb76d9eeea54de4006c12902 = $(`<div id="html_06ed1030fb76d9eeea54de4006c12902" style="width: 100.0%; height: 100.0%;">     <div style="width: 270px;">         <h4 style="margin-bottom: 8px;">             Jorhat         </h4>         <b>Today's Rainfall:</b> 0.00 mm<br>         <b>3-Day Rainfall:</b> 0.00 mm<br>         <b>Elevation:</b> 116 m<br>         <b>Closest River:</b> Brahmaputra River<br>         <b>Distance from River:</b> 10 km<br>         <b>Flood Risk Score:</b> 32.99/100<br>         <b>Flood Zone:</b> Safe     </div>     </div>`)[0];
+                popup_9f065d20def1ca557d2d26bc1fbdcdec.setContent(html_06ed1030fb76d9eeea54de4006c12902);
+            
+        
+
+        circle_marker_81b54afc4b9237a849a3617e66de0cec.bindPopup(popup_9f065d20def1ca557d2d26bc1fbdcdec)
+        ;
+
+        
+    
+    
+            circle_marker_81b54afc4b9237a849a3617e66de0cec.bindTooltip(
+                `<div>
+                     Jorhat - Safe
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7048b1daca1b66d01bf91dc76af37027 = L.circleMarker(
+                [26.1883, 91.6783],
+                {"bubblingMouseEvents": true, "color": "#CDB4DB", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#CDB4DB", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_8baab95c8c44c79269d4f36d9f99d809);
+        
+    
+        var popup_22a00237d9c405d82159348805bc4fcb = L.popup({
+  "maxWidth": 330,
+});
+
+        
+            
+                var html_49b0093a925fe824d187f71d8be0f7b5 = $(`<div id="html_49b0093a925fe824d187f71d8be0f7b5" style="width: 100.0%; height: 100.0%;">     <div style="width: 270px;">         <h4 style="margin-bottom: 8px;">             Kamrup         </h4>         <b>Today's Rainfall:</b> 0.30 mm<br>         <b>3-Day Rainfall:</b> 0.30 mm<br>         <b>Elevation:</b> 31 m<br>         <b>Closest River:</b> Brahmaputra River<br>         <b>Distance from River:</b> 5 km<br>         <b>Flood Risk Score:</b> 42.19/100<br>         <b>Flood Zone:</b> Medium Risk     </div>     </div>`)[0];
+                popup_22a00237d9c405d82159348805bc4fcb.setContent(html_49b0093a925fe824d187f71d8be0f7b5);
+            
+        
+
+        circle_marker_7048b1daca1b66d01bf91dc76af37027.bindPopup(popup_22a00237d9c405d82159348805bc4fcb)
+        ;
+
+        
+    
+    
+            circle_marker_7048b1daca1b66d01bf91dc76af37027.bindTooltip(
+                `<div>
+                     Kamrup - Medium Risk
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_61468dac24a9cc89e40da63805662f5f = L.circleMarker(
+                [26.14, 91.75],
+                {"bubblingMouseEvents": true, "color": "#CDB4DB", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#CDB4DB", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_8baab95c8c44c79269d4f36d9f99d809);
+        
+    
+        var popup_34c702684df4417903f14b95a216c4b4 = L.popup({
+  "maxWidth": 330,
+});
+
+        
+            
+                var html_fbc66f7bd1dff975a8fbcbeffc31cfbf = $(`<div id="html_fbc66f7bd1dff975a8fbcbeffc31cfbf" style="width: 100.0%; height: 100.0%;">     <div style="width: 270px;">         <h4 style="margin-bottom: 8px;">             Kamrup Metropolitan         </h4>         <b>Today's Rainfall:</b> 0.20 mm<br>         <b>3-Day Rainfall:</b> 0.20 mm<br>         <b>Elevation:</b> 53 m<br>         <b>Closest River:</b> Brahmaputra River<br>         <b>Distance from River:</b> 2 km<br>         <b>Flood Risk Score:</b> 42.09/100<br>         <b>Flood Zone:</b> Medium Risk     </div>     </div>`)[0];
+                popup_34c702684df4417903f14b95a216c4b4.setContent(html_fbc66f7bd1dff975a8fbcbeffc31cfbf);
+            
+        
+
+        circle_marker_61468dac24a9cc89e40da63805662f5f.bindPopup(popup_34c702684df4417903f14b95a216c4b4)
+        ;
+
+        
+    
+    
+            circle_marker_61468dac24a9cc89e40da63805662f5f.bindTooltip(
+                `<div>
+                     Kamrup Metropolitan - Medium Risk
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fdf3ce15fd3a0daa0585a77f7b431cc6 = L.circleMarker(
+                [25.83, 93.43],
+                {"bubblingMouseEvents": true, "color": "#A7D8FF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#A7D8FF", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_8baab95c8c44c79269d4f36d9f99d809);
+        
+    
+        var popup_3f9fa5dc8902fb159086126395f36bda = L.popup({
+  "maxWidth": 330,
+});
+
+        
+            
+                var html_2d2b5286a0b10885c168e6de98f8f5da = $(`<div id="html_2d2b5286a0b10885c168e6de98f8f5da" style="width: 100.0%; height: 100.0%;">     <div style="width: 270px;">         <h4 style="margin-bottom: 8px;">             Karbi Anglong         </h4>         <b>Today's Rainfall:</b> 0.30 mm<br>         <b>3-Day Rainfall:</b> 0.30 mm<br>         <b>Elevation:</b> 186 m<br>         <b>Closest River:</b> Kopili River<br>         <b>Distance from River:</b> 30 km<br>         <b>Flood Risk Score:</b> 23.79/100<br>         <b>Flood Zone:</b> Safe     </div>     </div>`)[0];
+                popup_3f9fa5dc8902fb159086126395f36bda.setContent(html_2d2b5286a0b10885c168e6de98f8f5da);
+            
+        
+
+        circle_marker_fdf3ce15fd3a0daa0585a77f7b431cc6.bindPopup(popup_3f9fa5dc8902fb159086126395f36bda)
+        ;
+
+        
+    
+    
+            circle_marker_fdf3ce15fd3a0daa0585a77f7b431cc6.bindTooltip(
+                `<div>
+                     Karbi Anglong - Safe
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eb4da0212877903af6d0f75837e168d1 = L.circleMarker(
+                [24.87, 92.35],
+                {"bubblingMouseEvents": true, "color": "#CDB4DB", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#CDB4DB", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_8baab95c8c44c79269d4f36d9f99d809);
+        
+    
+        var popup_c7c772bfcb4a4bf9acf9761852154cdb = L.popup({
+  "maxWidth": 330,
+});
+
+        
+            
+                var html_6fcbde3a913e52e0d349cfcf3e367c1c = $(`<div id="html_6fcbde3a913e52e0d349cfcf3e367c1c" style="width: 100.0%; height: 100.0%;">     <div style="width: 270px;">         <h4 style="margin-bottom: 8px;">             Karimganj         </h4>         <b>Today's Rainfall:</b> 0.50 mm<br>         <b>3-Day Rainfall:</b> 0.50 mm<br>         <b>Elevation:</b> 13 m<br>         <b>Closest River:</b> Barak River<br>         <b>Distance from River:</b> 8 km<br>         <b>Flood Risk Score:</b> 43.68/100<br>         <b>Flood Zone:</b> Medium Risk     </div>     </div>`)[0];
+                popup_c7c772bfcb4a4bf9acf9761852154cdb.setContent(html_6fcbde3a913e52e0d349cfcf3e367c1c);
+            
+        
+
+        circle_marker_eb4da0212877903af6d0f75837e168d1.bindPopup(popup_c7c772bfcb4a4bf9acf9761852154cdb)
+        ;
+
+        
+    
+    
+            circle_marker_eb4da0212877903af6d0f75837e168d1.bindTooltip(
+                `<div>
+                     Karimganj - Medium Risk
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_abf130a687df6698c17ea507e7ee6c82 = L.circleMarker(
+                [26.399, 90.2718],
+                {"bubblingMouseEvents": true, "color": "#CDB4DB", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#CDB4DB", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_8baab95c8c44c79269d4f36d9f99d809);
+        
+    
+        var popup_18283bc1d7ae2afb646599c085f8ce78 = L.popup({
+  "maxWidth": 330,
+});
+
+        
+            
+                var html_d6ad1b04653b54251e03948df448f323 = $(`<div id="html_d6ad1b04653b54251e03948df448f323" style="width: 100.0%; height: 100.0%;">     <div style="width: 270px;">         <h4 style="margin-bottom: 8px;">             Kokrajhar         </h4>         <b>Today's Rainfall:</b> 0.20 mm<br>         <b>3-Day Rainfall:</b> 0.20 mm<br>         <b>Elevation:</b> 38 m<br>         <b>Closest River:</b> Sankosh River<br>         <b>Distance from River:</b> 10 km<br>         <b>Flood Risk Score:</b> 37.55/100<br>         <b>Flood Zone:</b> Medium Risk     </div>     </div>`)[0];
+                popup_18283bc1d7ae2afb646599c085f8ce78.setContent(html_d6ad1b04653b54251e03948df448f323);
+            
+        
+
+        circle_marker_abf130a687df6698c17ea507e7ee6c82.bindPopup(popup_18283bc1d7ae2afb646599c085f8ce78)
+        ;
+
+        
+    
+    
+            circle_marker_abf130a687df6698c17ea507e7ee6c82.bindTooltip(
+                `<div>
+                     Kokrajhar - Medium Risk
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_02d110d7ee02aaf20084b7967cb127ab = L.circleMarker(
+                [27.23, 94.1],
+                {"bubblingMouseEvents": true, "color": "#CDB4DB", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#CDB4DB", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_8baab95c8c44c79269d4f36d9f99d809);
+        
+    
+        var popup_24fd11bd76c5dd02bc2672cf2a01708a = L.popup({
+  "maxWidth": 330,
+});
+
+        
+            
+                var html_90a65a9cbdac57bbff7d83300762364e = $(`<div id="html_90a65a9cbdac57bbff7d83300762364e" style="width: 100.0%; height: 100.0%;">     <div style="width: 270px;">         <h4 style="margin-bottom: 8px;">             Lakhimpur         </h4>         <b>Today's Rainfall:</b> 1.80 mm<br>         <b>3-Day Rainfall:</b> 1.80 mm<br>         <b>Elevation:</b> 96 m<br>         <b>Closest River:</b> Brahmaputra River<br>         <b>Distance from River:</b> 8 km<br>         <b>Flood Risk Score:</b> 60.96/100<br>         <b>Flood Zone:</b> Medium Risk     </div>     </div>`)[0];
+                popup_24fd11bd76c5dd02bc2672cf2a01708a.setContent(html_90a65a9cbdac57bbff7d83300762364e);
+            
+        
+
+        circle_marker_02d110d7ee02aaf20084b7967cb127ab.bindPopup(popup_24fd11bd76c5dd02bc2672cf2a01708a)
+        ;
+
+        
+    
+    
+            circle_marker_02d110d7ee02aaf20084b7967cb127ab.bindTooltip(
+                `<div>
+                     Lakhimpur - Medium Risk
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0cf8c6aed388b0457c9bb12c88e72338 = L.circleMarker(
+                [26.95, 94.1667],
+                {"bubblingMouseEvents": true, "color": "#CDB4DB", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#CDB4DB", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_8baab95c8c44c79269d4f36d9f99d809);
+        
+    
+        var popup_aeff222d262ce6b2a15e5c4cd4323b4d = L.popup({
+  "maxWidth": 330,
+});
+
+        
+            
+                var html_6dd94b1070f8ccb97898b72e0af0d788 = $(`<div id="html_6dd94b1070f8ccb97898b72e0af0d788" style="width: 100.0%; height: 100.0%;">     <div style="width: 270px;">         <h4 style="margin-bottom: 8px;">             Majuli         </h4>         <b>Today's Rainfall:</b> 0.50 mm<br>         <b>3-Day Rainfall:</b> 0.50 mm<br>         <b>Elevation:</b> 87 m<br>         <b>Closest River:</b> Brahmaputra River<br>         <b>Distance from River:</b> 2 km<br>         <b>Flood Risk Score:</b> 45.76/100<br>         <b>Flood Zone:</b> Medium Risk     </div>     </div>`)[0];
+                popup_aeff222d262ce6b2a15e5c4cd4323b4d.setContent(html_6dd94b1070f8ccb97898b72e0af0d788);
+            
+        
+
+        circle_marker_0cf8c6aed388b0457c9bb12c88e72338.bindPopup(popup_aeff222d262ce6b2a15e5c4cd4323b4d)
+        ;
+
+        
+    
+    
+            circle_marker_0cf8c6aed388b0457c9bb12c88e72338.bindTooltip(
+                `<div>
+                     Majuli - Medium Risk
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7f5cc9f7541c43ac7dab048d032841cd = L.circleMarker(
+                [26.2515, 92.34],
+                {"bubblingMouseEvents": true, "color": "#A7D8FF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#A7D8FF", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_8baab95c8c44c79269d4f36d9f99d809);
+        
+    
+        var popup_48b4d0c6c47db7d1cb7f2e3841ddd99c = L.popup({
+  "maxWidth": 330,
+});
+
+        
+            
+                var html_108a1a2bf89d8c8df3a5a484f874ecbe = $(`<div id="html_108a1a2bf89d8c8df3a5a484f874ecbe" style="width: 100.0%; height: 100.0%;">     <div style="width: 270px;">         <h4 style="margin-bottom: 8px;">             Morigaon         </h4>         <b>Today's Rainfall:</b> 0.20 mm<br>         <b>3-Day Rainfall:</b> 0.20 mm<br>         <b>Elevation:</b> 63 m<br>         <b>Closest River:</b> Kopili River<br>         <b>Distance from River:</b> 18 km<br>         <b>Flood Risk Score:</b> 32.18/100<br>         <b>Flood Zone:</b> Safe     </div>     </div>`)[0];
+                popup_48b4d0c6c47db7d1cb7f2e3841ddd99c.setContent(html_108a1a2bf89d8c8df3a5a484f874ecbe);
+            
+        
+
+        circle_marker_7f5cc9f7541c43ac7dab048d032841cd.bindPopup(popup_48b4d0c6c47db7d1cb7f2e3841ddd99c)
+        ;
+
+        
+    
+    
+            circle_marker_7f5cc9f7541c43ac7dab048d032841cd.bindTooltip(
+                `<div>
+                     Morigaon - Safe
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_71d6daa4c66f7dfc6da506192dffda7b = L.circleMarker(
+                [26.3504, 92.6796],
+                {"bubblingMouseEvents": true, "color": "#CDB4DB", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#CDB4DB", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_8baab95c8c44c79269d4f36d9f99d809);
+        
+    
+        var popup_0f9b8127f2b1c18fb5bf5cfae2e55d2f = L.popup({
+  "maxWidth": 330,
+});
+
+        
+            
+                var html_c41b3bc04f0a100c3c9e246e5104f3a3 = $(`<div id="html_c41b3bc04f0a100c3c9e246e5104f3a3" style="width: 100.0%; height: 100.0%;">     <div style="width: 270px;">         <h4 style="margin-bottom: 8px;">             Nagaon         </h4>         <b>Today's Rainfall:</b> 0.50 mm<br>         <b>3-Day Rainfall:</b> 0.50 mm<br>         <b>Elevation:</b> 61 m<br>         <b>Closest River:</b> Kopili River<br>         <b>Distance from River:</b> 15 km<br>         <b>Flood Risk Score:</b> 38.43/100<br>         <b>Flood Zone:</b> Medium Risk     </div>     </div>`)[0];
+                popup_0f9b8127f2b1c18fb5bf5cfae2e55d2f.setContent(html_c41b3bc04f0a100c3c9e246e5104f3a3);
+            
+        
+
+        circle_marker_71d6daa4c66f7dfc6da506192dffda7b.bindPopup(popup_0f9b8127f2b1c18fb5bf5cfae2e55d2f)
+        ;
+
+        
+    
+    
+            circle_marker_71d6daa4c66f7dfc6da506192dffda7b.bindTooltip(
+                `<div>
+                     Nagaon - Medium Risk
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8eab1310f412fc9f8e9a8cd98cdb12a0 = L.circleMarker(
+                [26.445, 91.44],
+                {"bubblingMouseEvents": true, "color": "#CDB4DB", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#CDB4DB", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_8baab95c8c44c79269d4f36d9f99d809);
+        
+    
+        var popup_4921050198f61aae3258266792bc0f32 = L.popup({
+  "maxWidth": 330,
+});
+
+        
+            
+                var html_f574f88704e7f55e78ab721b562ea11b = $(`<div id="html_f574f88704e7f55e78ab721b562ea11b" style="width: 100.0%; height: 100.0%;">     <div style="width: 270px;">         <h4 style="margin-bottom: 8px;">             Nalbari         </h4>         <b>Today's Rainfall:</b> 0.70 mm<br>         <b>3-Day Rainfall:</b> 0.70 mm<br>         <b>Elevation:</b> 42 m<br>         <b>Closest River:</b> Brahmaputra River<br>         <b>Distance from River:</b> 10 km<br>         <b>Flood Risk Score:</b> 44.79/100<br>         <b>Flood Zone:</b> Medium Risk     </div>     </div>`)[0];
+                popup_4921050198f61aae3258266792bc0f32.setContent(html_f574f88704e7f55e78ab721b562ea11b);
+            
+        
+
+        circle_marker_8eab1310f412fc9f8e9a8cd98cdb12a0.bindPopup(popup_4921050198f61aae3258266792bc0f32)
+        ;
+
+        
+    
+    
+            circle_marker_8eab1310f412fc9f8e9a8cd98cdb12a0.bindTooltip(
+                `<div>
+                     Nalbari - Medium Risk
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a28d27557ef26d6b87ee374bd5038d59 = L.circleMarker(
+                [26.9889, 94.639],
+                {"bubblingMouseEvents": true, "color": "#CDB4DB", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#CDB4DB", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_8baab95c8c44c79269d4f36d9f99d809);
+        
+    
+        var popup_a25236ced8b3a04a26de13e5b51327ca = L.popup({
+  "maxWidth": 330,
+});
+
+        
+            
+                var html_fe6193b0f2e6007dcf7f3649d3c14ad7 = $(`<div id="html_fe6193b0f2e6007dcf7f3649d3c14ad7" style="width: 100.0%; height: 100.0%;">     <div style="width: 270px;">         <h4 style="margin-bottom: 8px;">             Sivasagar         </h4>         <b>Today's Rainfall:</b> 0.90 mm<br>         <b>3-Day Rainfall:</b> 0.90 mm<br>         <b>Elevation:</b> 95 m<br>         <b>Closest River:</b> Dikhou River<br>         <b>Distance from River:</b> 15 km<br>         <b>Flood Risk Score:</b> 43.57/100<br>         <b>Flood Zone:</b> Medium Risk     </div>     </div>`)[0];
+                popup_a25236ced8b3a04a26de13e5b51327ca.setContent(html_fe6193b0f2e6007dcf7f3649d3c14ad7);
+            
+        
+
+        circle_marker_a28d27557ef26d6b87ee374bd5038d59.bindPopup(popup_a25236ced8b3a04a26de13e5b51327ca)
+        ;
+
+        
+    
+    
+            circle_marker_a28d27557ef26d6b87ee374bd5038d59.bindTooltip(
+                `<div>
+                     Sivasagar - Medium Risk
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c3c426f2ee0fc7675a40b22f505f3e59 = L.circleMarker(
+                [26.63, 92.79],
+                {"bubblingMouseEvents": true, "color": "#CDB4DB", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#CDB4DB", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_8baab95c8c44c79269d4f36d9f99d809);
+        
+    
+        var popup_c79b0e913925353e28c1c849bcbcd82c = L.popup({
+  "maxWidth": 330,
+});
+
+        
+            
+                var html_2223f23d9768696bf40cb3fe57902a68 = $(`<div id="html_2223f23d9768696bf40cb3fe57902a68" style="width: 100.0%; height: 100.0%;">     <div style="width: 270px;">         <h4 style="margin-bottom: 8px;">             Sonitpur         </h4>         <b>Today's Rainfall:</b> 1.10 mm<br>         <b>3-Day Rainfall:</b> 1.10 mm<br>         <b>Elevation:</b> 73 m<br>         <b>Closest River:</b> Brahmaputra River<br>         <b>Distance from River:</b> 5 km<br>         <b>Flood Risk Score:</b> 53.02/100<br>         <b>Flood Zone:</b> Medium Risk     </div>     </div>`)[0];
+                popup_c79b0e913925353e28c1c849bcbcd82c.setContent(html_2223f23d9768696bf40cb3fe57902a68);
+            
+        
+
+        circle_marker_c3c426f2ee0fc7675a40b22f505f3e59.bindPopup(popup_c79b0e913925353e28c1c849bcbcd82c)
+        ;
+
+        
+    
+    
+            circle_marker_c3c426f2ee0fc7675a40b22f505f3e59.bindTooltip(
+                `<div>
+                     Sonitpur - Medium Risk
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f929eed4e4dded5e59946c24cccad6eb = L.circleMarker(
+                [25.7165, 89.8986],
+                {"bubblingMouseEvents": true, "color": "#CDB4DB", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#CDB4DB", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_8baab95c8c44c79269d4f36d9f99d809);
+        
+    
+        var popup_755433a0507806a76229a20a1843ff3d = L.popup({
+  "maxWidth": 330,
+});
+
+        
+            
+                var html_257036853e1912755062bcafd96be9a5 = $(`<div id="html_257036853e1912755062bcafd96be9a5" style="width: 100.0%; height: 100.0%;">     <div style="width: 270px;">         <h4 style="margin-bottom: 8px;">             South Salmara-Mankachar         </h4>         <b>Today's Rainfall:</b> 0.20 mm<br>         <b>3-Day Rainfall:</b> 0.20 mm<br>         <b>Elevation:</b> 28 m<br>         <b>Closest River:</b> Jinjiram River<br>         <b>Distance from River:</b> 12 km<br>         <b>Flood Risk Score:</b> 36.55/100<br>         <b>Flood Zone:</b> Medium Risk     </div>     </div>`)[0];
+                popup_755433a0507806a76229a20a1843ff3d.setContent(html_257036853e1912755062bcafd96be9a5);
+            
+        
+
+        circle_marker_f929eed4e4dded5e59946c24cccad6eb.bindPopup(popup_755433a0507806a76229a20a1843ff3d)
+        ;
+
+        
+    
+    
+            circle_marker_f929eed4e4dded5e59946c24cccad6eb.bindTooltip(
+                `<div>
+                     South Salmara-Mankachar - Medium Risk
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a343c33d18accb4b4587dac855b2ddea = L.circleMarker(
+                [26.6167, 91.5737],
+                {"bubblingMouseEvents": true, "color": "#CDB4DB", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#CDB4DB", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_8baab95c8c44c79269d4f36d9f99d809);
+        
+    
+        var popup_ee59021944510e41b8f007bd141008ad = L.popup({
+  "maxWidth": 330,
+});
+
+        
+            
+                var html_ec5d661d311c8e4e2cc0936cb10c8d66 = $(`<div id="html_ec5d661d311c8e4e2cc0936cb10c8d66" style="width: 100.0%; height: 100.0%;">     <div style="width: 270px;">         <h4 style="margin-bottom: 8px;">             Tamulpur         </h4>         <b>Today's Rainfall:</b> 1.30 mm<br>         <b>3-Day Rainfall:</b> 1.30 mm<br>         <b>Elevation:</b> 52 m<br>         <b>Closest River:</b> Pagladia River<br>         <b>Distance from River:</b> 10 km<br>         <b>Flood Risk Score:</b> 53.36/100<br>         <b>Flood Zone:</b> Medium Risk     </div>     </div>`)[0];
+                popup_ee59021944510e41b8f007bd141008ad.setContent(html_ec5d661d311c8e4e2cc0936cb10c8d66);
+            
+        
+
+        circle_marker_a343c33d18accb4b4587dac855b2ddea.bindPopup(popup_ee59021944510e41b8f007bd141008ad)
+        ;
+
+        
+    
+    
+            circle_marker_a343c33d18accb4b4587dac855b2ddea.bindTooltip(
+                `<div>
+                     Tamulpur - Medium Risk
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_27c7429ffa023ca888ffe0db61496c3a = L.circleMarker(
+                [27.5, 95.367],
+                {"bubblingMouseEvents": true, "color": "#CDB4DB", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#CDB4DB", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_8baab95c8c44c79269d4f36d9f99d809);
+        
+    
+        var popup_a39a20d6e8974b6f919d170d22e50aa0 = L.popup({
+  "maxWidth": 330,
+});
+
+        
+            
+                var html_14895c34e48475e804dc9ba4cce9c782 = $(`<div id="html_14895c34e48475e804dc9ba4cce9c782" style="width: 100.0%; height: 100.0%;">     <div style="width: 270px;">         <h4 style="margin-bottom: 8px;">             Tinsukia         </h4>         <b>Today's Rainfall:</b> 2.30 mm<br>         <b>3-Day Rainfall:</b> 2.30 mm<br>         <b>Elevation:</b> 116 m<br>         <b>Closest River:</b> Brahmaputra River<br>         <b>Distance from River:</b> 18 km<br>         <b>Flood Risk Score:</b> 61.80/100<br>         <b>Flood Zone:</b> Medium Risk     </div>     </div>`)[0];
+                popup_a39a20d6e8974b6f919d170d22e50aa0.setContent(html_14895c34e48475e804dc9ba4cce9c782);
+            
+        
+
+        circle_marker_27c7429ffa023ca888ffe0db61496c3a.bindPopup(popup_a39a20d6e8974b6f919d170d22e50aa0)
+        ;
+
+        
+    
+    
+            circle_marker_27c7429ffa023ca888ffe0db61496c3a.bindTooltip(
+                `<div>
+                     Tinsukia - Medium Risk
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fb449942d4054018b4de438ad48be361 = L.circleMarker(
+                [26.7452, 92.0962],
+                {"bubblingMouseEvents": true, "color": "#CDB4DB", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#CDB4DB", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_8baab95c8c44c79269d4f36d9f99d809);
+        
+    
+        var popup_aa0b3cc1ddd6dbc68cdfa88a91281fa9 = L.popup({
+  "maxWidth": 330,
+});
+
+        
+            
+                var html_08f733d92f76115a13346f6fada775fb = $(`<div id="html_08f733d92f76115a13346f6fada775fb" style="width: 100.0%; height: 100.0%;">     <div style="width: 270px;">         <h4 style="margin-bottom: 8px;">             Udalguri         </h4>         <b>Today's Rainfall:</b> 1.00 mm<br>         <b>3-Day Rainfall:</b> 1.00 mm<br>         <b>Elevation:</b> 180 m<br>         <b>Closest River:</b> Brahmaputra River<br>         <b>Distance from River:</b> 20 km<br>         <b>Flood Risk Score:</b> 40.22/100<br>         <b>Flood Zone:</b> Medium Risk     </div>     </div>`)[0];
+                popup_aa0b3cc1ddd6dbc68cdfa88a91281fa9.setContent(html_08f733d92f76115a13346f6fada775fb);
+            
+        
+
+        circle_marker_fb449942d4054018b4de438ad48be361.bindPopup(popup_aa0b3cc1ddd6dbc68cdfa88a91281fa9)
+        ;
+
+        
+    
+    
+            circle_marker_fb449942d4054018b4de438ad48be361.bindTooltip(
+                `<div>
+                     Udalguri - Medium Risk
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_11110f7dbf5a126b1a2c317796488f65 = L.circleMarker(
+                [25.9233, 92.6083],
+                {"bubblingMouseEvents": true, "color": "#CDB4DB", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#CDB4DB", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_8baab95c8c44c79269d4f36d9f99d809);
+        
+    
+        var popup_4727ffe5edfb93d816fb5be67e501730 = L.popup({
+  "maxWidth": 330,
+});
+
+        
+            
+                var html_681516d1755c67cde502c2737b566449 = $(`<div id="html_681516d1755c67cde502c2737b566449" style="width: 100.0%; height: 100.0%;">     <div style="width: 270px;">         <h4 style="margin-bottom: 8px;">             West Karbi Anglong         </h4>         <b>Today's Rainfall:</b> 3.20 mm<br>         <b>3-Day Rainfall:</b> 3.20 mm<br>         <b>Elevation:</b> 425 m<br>         <b>Closest River:</b> Kopili River<br>         <b>Distance from River:</b> 25 km<br>         <b>Flood Risk Score:</b> 64.24/100<br>         <b>Flood Zone:</b> Medium Risk     </div>     </div>`)[0];
+                popup_4727ffe5edfb93d816fb5be67e501730.setContent(html_681516d1755c67cde502c2737b566449);
+            
+        
+
+        circle_marker_11110f7dbf5a126b1a2c317796488f65.bindPopup(popup_4727ffe5edfb93d816fb5be67e501730)
+        ;
+
+        
+    
+    
+            circle_marker_11110f7dbf5a126b1a2c317796488f65.bindTooltip(
+                `<div>
+                     West Karbi Anglong - Medium Risk
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
