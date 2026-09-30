@@ -1320,5 +1320,19 @@ RiverMind Assam Flood Zoning Dashboard
 }
             );
         
+    map_8baab95c8c44c79269d4f36d9f99d809.on('popupopen', function(e) {
+        var popupContent = e.popup.getContent();
+        if (typeof popupContent !== 'string') {
+            if (popupContent.outerHTML) popupContent = popupContent.outerHTML;
+            else if (popupContent.innerHTML) popupContent = popupContent.innerHTML;
+        }
+        var tempDiv = document.createElement('div');
+        tempDiv.innerHTML = popupContent;
+        var h4 = tempDiv.querySelector('h4');
+        if (h4) {
+            var district = h4.innerText || h4.textContent;
+            window.parent.postMessage({ type: 'DISTRICT_SELECTED', district: district.trim() }, '*');
+        }
+    });
 </script>
 </html>

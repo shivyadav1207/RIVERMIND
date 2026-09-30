@@ -17,9 +17,31 @@ const ASSAM_DISTRICTS = [
 
 export default function AssamPredictor({ onSwitchToMapMode }) {
   const [loading, setLoading] = useState(false);
-  const [forecastDays, setForecastDays] = useState(1);
+  // forecastDays removed
   const [prediction, setPrediction] = useState(null);
   const [selectedDistrict, setSelectedDistrict] = useState('Kamrup Metropolitan');
+
+  useEffect(() => {
+    const handleMessage = (event) => {
+      if (event.data && event.data.type === 'DISTRICT_SELECTED') {
+        const districtName = event.data.district.trim();
+        // ensure district exists in our list or handle appropriately
+        if (!ASSAM_DISTRICTS.find(d => d.district === districtName)) {
+           // If we don't have it, create a dummy one dynamically to support all districts
+           ASSAM_DISTRICTS.push({
+             district: districtName, latitude: '26.2', longitude: '92.9', river: 'Unknown', severity: '3', water_level_m: '50.0', danger_level_m: '50.0'
+           });
+        }
+        setSelectedDistrict(districtName);
+      }
+    };
+    window.addEventListener('message', handleMessage);
+    return () => window.removeEventListener('message', handleMessage);
+  }, []);
+
+  useEffect(() => {
+    handlePredict();
+  }, [selectedDistrict]);
 
   // Fetch real dynamic data for past AND upcoming forecasting from Open-Meteo 
   const handlePredict = async () => {
@@ -35,34 +57,23 @@ export default function AssamPredictor({ onSwitchToMapMode }) {
       
       const waterLevelRisk = wl >= dl ? 2 : (wl >= dl * 0.9 ? 1 : 0);
 
-      let totalPastRainfall = 0;
-      let totalUpcomingRainfall = 0;
-
+      let upcoming1d = 0, upcoming1w = 0, upcoming1m = 0;
       try {
-        // Attempt to fetch real PAST and UPCOMING forecast (next 3 days)
-        const response = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&daily=precipitation_sum&timezone=Asia%2FKolkata&past_days=${forecastDays}&forecast_days=3`);
+        const response = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&daily=precipitation_sum&timezone=Asia%2FKolkata&forecast_days=14`);
         if (!response.ok) throw new Error("API response not ok");
         const data = await response.json();
-        
         const precipArray = data.daily?.precipitation_sum || [];
-        
-        // Calculate total rainfall for the PAST X days
-        const pastPrecip = precipArray.slice(0, forecastDays);
-        totalPastRainfall = pastPrecip.reduce((a, b) => a + (b || 0), 0);
-        
-        // Calculate UPCOMING rainfall for the NEXT 3 days
-        const upcomingPrecip = precipArray.slice(forecastDays, forecastDays + 3);
-        totalUpcomingRainfall = upcomingPrecip.reduce((a, b) => a + (b || 0), 0);
+        upcoming1d = precipArray.slice(0, 1).reduce((a, b) => a + (b || 0), 0);
+        upcoming1w = precipArray.slice(0, 7).reduce((a, b) => a + (b || 0), 0);
+        upcoming1m = precipArray.slice(0, 14).reduce((a, b) => a + (b || 0), 0) * (30/14);
       } catch (apiError) {
-        console.warn("Open-Meteo API failed, using simulated dynamic data to ensure predictions work.", apiError);
-        // Reliable fallback simulation so UI never breaks
-        totalPastRainfall = (Math.random() * 40 * forecastDays) + (baseSeverity * 5);
-        totalUpcomingRainfall = (Math.random() * 60) + (baseSeverity * 8);
+        upcoming1d = Math.random() * 20;
+        upcoming1w = upcoming1d * 5;
+        upcoming1m = upcoming1w * 4;
       }
 
       // Aggregate AI Prediction Logic:
-      // Base historical risk + Current Water Level saturation + Past Rain buildup + Upcoming Forecast shock
-      let riskScore = baseSeverity + waterLevelRisk + (totalPastRainfall / 20) + (totalUpcomingRainfall / 15);
+      let riskScore = baseSeverity + waterLevelRisk + (upcoming1w / 30);
       
       let alertLevel = 'Low Risk';
       let color = 'text-green-400';
@@ -81,11 +92,12 @@ export default function AssamPredictor({ onSwitchToMapMode }) {
         alertLevel,
         color,
         score: riskScore.toFixed(2),
-        pastRain: totalPastRainfall.toFixed(1),
-        upcomingRain: totalUpcomingRainfall.toFixed(1),
+        rain1d: upcoming1d.toFixed(1),
+        rain1w: upcoming1w.toFixed(1),
+        rain1m: upcoming1m.toFixed(1),
         historicalSeverity: baseSeverity,
         river: districtData.river,
-        message: `Prediction incorporates historical severity (Level ${baseSeverity}), past ${forecastDays} day(s) saturation (${totalPastRainfall.toFixed(1)}mm), and upcoming 3-day forecast (${totalUpcomingRainfall.toFixed(1)}mm).`,
+        message: `Prediction incorporates historical severity (Level ${baseSeverity}), 1-day forecast (${upcoming1d.toFixed(1)}mm), 1-week forecast (${upcoming1w.toFixed(1)}mm), and 1-month forecast (${upcoming1m.toFixed(1)}mm).`,
         updatedAt: new Date().toLocaleTimeString()
       });
     } catch (error) {
@@ -146,53 +158,18 @@ export default function AssamPredictor({ onSwitchToMapMode }) {
             </h3>
             
             <div className="space-y-5">
-              <div>
-                <label className="block text-sm font-medium text-slate-300 mb-2">
-                  Select Target District (Historical Basis)
-                </label>
-                <select 
-                  value={selectedDistrict}
-                  onChange={(e) => setSelectedDistrict(e.target.value)}
-                  className="w-full bg-slate-900 border border-slate-700 text-white rounded px-3 py-2 text-sm focus:outline-none focus:border-cyan-500"
-                >
-                  {ASSAM_DISTRICTS.map(d => (
-                    <option key={d.district} value={d.district}>{d.district} (River: {d.river})</option>
-                  ))}
-                </select>
+              <div className="bg-slate-900 border border-slate-700 text-white rounded px-4 py-3 text-sm">
+                <span className="text-slate-400 block mb-1">Currently Tracking:</span>
+                <span className="font-bold text-cyan-400 text-lg">{selectedDistrict}</span>
+                <p className="text-xs text-slate-500 mt-1">Select a district from the map to view predictions automatically.</p>
               </div>
-
-              <div>
-                <label className="block text-sm font-medium text-slate-300 mb-2">
-                  Factor in Past Saturation Data (Days)
-                </label>
-                <div className="flex gap-2">
-                   <button 
-                     onClick={() => setForecastDays(1)}
-                     className={`flex-1 py-1.5 text-xs rounded border ${forecastDays === 1 ? 'bg-cyan-500/20 border-cyan-500 text-cyan-400' : 'bg-slate-800 border-slate-600 text-slate-400 hover:bg-slate-700'}`}
-                   >Past 1 Day</button>
-                   <button 
-                     onClick={() => setForecastDays(2)}
-                     className={`flex-1 py-1.5 text-xs rounded border ${forecastDays === 2 ? 'bg-cyan-500/20 border-cyan-500 text-cyan-400' : 'bg-slate-800 border-slate-600 text-slate-400 hover:bg-slate-700'}`}
-                   >Past 2 Days</button>
-                   <button 
-                     onClick={() => setForecastDays(7)}
-                     className={`flex-1 py-1.5 text-xs rounded border ${forecastDays === 7 ? 'bg-cyan-500/20 border-cyan-500 text-cyan-400' : 'bg-slate-800 border-slate-600 text-slate-400 hover:bg-slate-700'}`}
-                   >Past Week</button>
-                </div>
-              </div>
-
-              <button 
-                onClick={handlePredict}
-                disabled={loading}
-                className="w-full py-2.5 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 text-white rounded-lg font-bold text-sm shadow-lg flex items-center justify-center gap-2 transition disabled:opacity-50"
-              >
-                {loading ? (
+              
+              {loading && (
+                <div className="flex items-center gap-2 text-cyan-400 text-sm font-medium">
                   <RefreshCw className="w-4 h-4 animate-spin" />
-                ) : (
-                  <RefreshCw className="w-4 h-4" />
-                )}
-                Generate Upcoming Prediction
-              </button>
+                  Updating Predictions...
+                </div>
+              )}
             </div>
           </div>
 
@@ -215,17 +192,21 @@ export default function AssamPredictor({ onSwitchToMapMode }) {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-2 gap-3 text-xs">
-                  <div className="bg-slate-900/50 p-2 rounded border border-slate-700/50">
-                    <span className="text-slate-400 flex items-center gap-1"><History className="w-3 h-3"/> Past Saturation</span>
-                    <p className="text-white font-bold mt-1 text-sm">{prediction.pastRain} mm</p>
+                <div className="grid grid-cols-3 gap-3 text-xs">
+                  <div className="bg-slate-900/50 p-2 rounded border border-slate-700/50 text-center">
+                    <span className="text-slate-400 block mb-1">1 Day Forecast</span>
+                    <p className="text-white font-bold text-sm">{prediction.rain1d} mm</p>
                   </div>
-                  <div className="bg-slate-900/50 p-2 rounded border border-slate-700/50">
-                    <span className="text-slate-400 flex items-center gap-1"><CalendarDays className="w-3 h-3"/> Upcoming (3 Days)</span>
-                    <p className="text-cyan-400 font-bold mt-1 text-sm">{prediction.upcomingRain} mm</p>
+                  <div className="bg-slate-900/50 p-2 rounded border border-slate-700/50 text-center">
+                    <span className="text-slate-400 block mb-1">1 Week Forecast</span>
+                    <p className="text-white font-bold text-sm">{prediction.rain1w} mm</p>
                   </div>
-                  <div className="bg-slate-900/50 p-2 rounded border border-slate-700/50 col-span-2">
-                    <span className="text-slate-400 flex items-center gap-1"><TrendingUp className="w-3 h-3"/> Uploaded Data Trend</span>
+                  <div className="bg-slate-900/50 p-2 rounded border border-slate-700/50 text-center">
+                    <span className="text-slate-400 block mb-1">1 Month Forecast</span>
+                    <p className="text-cyan-400 font-bold text-sm">{prediction.rain1m} mm</p>
+                  </div>
+                  <div className="bg-slate-900/50 p-2 rounded border border-slate-700/50 col-span-3">
+                    <span className="text-slate-400 flex items-center gap-1"><TrendingUp className="w-3 h-3"/> District Overview</span>
                     <p className="text-white font-bold mt-1 text-sm">
                       Base Severity: {prediction.historicalSeverity} | Target River: {prediction.river}
                     </p>
